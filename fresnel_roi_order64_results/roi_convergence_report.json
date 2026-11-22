@@ -1,0 +1,193 @@
+{
+  "status": "converged",
+  "relative_tolerance": 0.001,
+  "required_consecutive_passes": 2,
+  "aperture_audit": {
+    "order": 64,
+    "nodes": 32768,
+    "area_numeric": 314.1592653589793,
+    "area_relative_error": 0.0,
+    "x2_integral_relative_error": 1.9984014443252818e-15,
+    "y2_integral_relative_error": 2.220446049250313e-15,
+    "max_normalized_boundary_expression": 0.9958382101470138,
+    "min_weight": 1.953456601290126e-08,
+    "passed": true
+  },
+  "conditions": {
+    "nf": 10.0,
+    "theta_ap": 0.3,
+    "ar": 1,
+    "p": 12.0,
+    "z": 33.333333333333336,
+    "wavelength": 0.3,
+    "aperture_area": 314.1592653589793,
+    "roi_radius": 5.0
+  },
+  "plan": {
+    "aperture_order": 64,
+    "source_nodes": 32768,
+    "base_polar_observation_points": 59904,
+    "base_polar_point_pairs": 1962934272,
+    "cartesian_point_pairs_initial": 134217728,
+    "cartesian_point_pairs_max": 973078528,
+    "extra_polar_point_pairs_if_both_axes_extend": 1342177280
+  },
+  "consecutive_step_pass": {
+    "radial": true,
+    "angular": true
+  },
+  "last_two_steps": {
+    "radial": [
+      {
+        "varied": "radial",
+        "order": 80,
+        "radial_order": 80,
+        "angular_order": 96,
+        "aperture_order": 64,
+        "E": 0.07312571141852953,
+        "E_hat": 0.09166266504952388,
+        "E_res": 0.07175191945346006,
+        "rs_reference_norm": 1.0059989529062643,
+        "roi_weight_sum": 0.9999999999999998,
+        "observation_points": 7680,
+        "previous_order": 64,
+        "E_abs_change": 1.1102230246251565e-16,
+        "E_relative_change": 1.5182389382455098e-15,
+        "E_step_status": "excellent",
+        "E_hat_abs_change": 1.6653345369377348e-16,
+        "E_hat_relative_change": 1.8168078966916184e-15,
+        "E_hat_step_status": "excellent",
+        "E_res_abs_change": 2.914335439641036e-16,
+        "E_res_relative_change": 4.0616828955096495e-15,
+        "E_res_step_status": "excellent",
+        "all_relative_changes_le_1e-3": true
+      },
+      {
+        "varied": "radial",
+        "order": 96,
+        "radial_order": 96,
+        "angular_order": 96,
+        "aperture_order": 64,
+        "E": 0.0731257114185293,
+        "E_hat": 0.09166266504952351,
+        "E_res": 0.07175191945345952,
+        "rs_reference_norm": 1.005998952906265,
+        "roi_weight_sum": 0.9999999999999998,
+        "observation_points": 9216,
+        "previous_order": 80,
+        "E_abs_change": 2.220446049250313e-16,
+        "E_relative_change": 3.036477876491015e-15,
+        "E_step_status": "excellent",
+        "E_hat_abs_change": 3.608224830031759e-16,
+        "E_hat_relative_change": 3.936417109498499e-15,
+        "E_hat_step_status": "excellent",
+        "E_res_abs_change": 5.412337245047638e-16,
+        "E_res_relative_change": 7.543125377375031e-15,
+        "E_res_step_status": "excellent",
+        "all_relative_changes_le_1e-3": true
+      }
+    ],
+    "angular": [
+      {
+        "varied": "angular",
+        "order": 80,
+        "radial_order": 96,
+        "angular_order": 80,
+        "aperture_order": 64,
+        "E": 0.07312571141852947,
+        "E_hat": 0.09166266504952375,
+        "E_res": 0.0717519194534595,
+        "rs_reference_norm": 1.005998952906264,
+        "roi_weight_sum": 0.9999999999999998,
+        "observation_points": 7680,
+        "previous_order": 64,
+        "E_abs_change": 5.551115123125783e-17,
+        "E_relative_change": 7.591194691227549e-16,
+        "E_step_status": "excellent",
+        "E_hat_abs_change": 1.249000902703301e-16,
+        "E_hat_relative_change": 1.362605922518715e-15,
+        "E_hat_step_status": "excellent",
+        "E_res_abs_change": 2.7755575615628914e-17,
+        "E_res_relative_change": 3.868269424294917e-16,
+        "E_res_step_status": "excellent",
+        "all_relative_changes_le_1e-3": true
+      },
+      {
+        "varied": "angular",
+        "order": 96,
+        "radial_order": 96,
+        "angular_order": 96,
+        "aperture_order": 64,
+        "E": 0.0731257114185293,
+        "E_hat": 0.09166266504952351,
+        "E_res": 0.07175191945345952,
+        "rs_reference_norm": 1.005998952906265,
+        "roi_weight_sum": 0.9999999999999998,
+        "observation_points": 9216,
+        "previous_order": 80,
+        "E_abs_change": 1.6653345369377348e-16,
+        "E_relative_change": 2.277358407368263e-15,
+        "E_step_status": "excellent",
+        "E_hat_abs_change": 2.3592239273284576e-16,
+        "E_hat_relative_change": 2.5738111869797913e-15,
+        "E_hat_step_status": "excellent",
+        "E_res_abs_change": 1.3877787807814457e-17,
+        "E_res_relative_change": 1.9341347121474592e-16,
+        "E_res_step_status": "excellent",
+        "all_relative_changes_le_1e-3": true
+      }
+    ]
+  },
+  "reference": {
+    "radial_order": 96,
+    "angular_order": 96,
+    "E": 0.0731257114185293,
+    "E_hat": 0.09166266504952351,
+    "E_res": 0.07175191945345952,
+    "rs_reference_norm": 1.005998952906265,
+    "roi_weight_sum": 0.9999999999999998,
+    "observation_points": 9216
+  },
+  "relative_changes_from_96_by_96": {
+    "E": 0.0,
+    "E_hat": 0.0,
+    "E_res": 0.0
+  },
+  "mixed_order_check_relative_changes": {
+    "radial": {
+      "E": 0.0,
+      "E_hat": 0.0,
+      "E_res": 0.0
+    },
+    "angular": {
+      "E": 0.0,
+      "E_hat": 0.0,
+      "E_res": 0.0
+    }
+  },
+  "cartesian_crosscheck": [
+    {
+      "cartesian_order": 64,
+      "reference_radial_order": 96,
+      "reference_angular_order": 96,
+      "E": 0.07312571141852944,
+      "E_hat": 0.09166266504952376,
+      "E_res": 0.0717519194534597,
+      "rs_reference_norm": 1.0059989529062643,
+      "roi_weight_sum": 1.0000000000000007,
+      "observation_points": 4096,
+      "E_abs_difference_from_polar": 1.3877787807814457e-16,
+      "E_hat_abs_difference_from_polar": 2.498001805406602e-16,
+      "E_res_abs_difference_from_polar": 1.8041124150158794e-16,
+      "E_relative_difference_from_polar": 1.8977986728068902e-15,
+      "E_hat_relative_difference_from_polar": 2.725211845037433e-15,
+      "E_res_relative_difference_from_polar": 2.5143751257916962e-15,
+      "within_tolerance_of_polar": true
+    }
+  ],
+  "notes": [
+    "The polar rule integrates one octant by reflection and interchange symmetry; the Cartesian reference integrates one quadrant using square-root-smoothed strips.",
+    "Both rules normalize by the analytic disk area and use the same RS-I norm in each row's E, E_hat and E_res. The aperture rule is fixed across all rows.",
+    "Success requires two consecutive accepted changes on each axis and agreement with an independent Cartesian rule."
+  ]
+}

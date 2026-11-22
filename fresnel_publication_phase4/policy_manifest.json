@@ -1,0 +1,36 @@
+{
+  "methods": {
+    "A": "original Phase 3 policy, <=64/512, same new math backend, 90s; original 30s historical data separate",
+    "B": "same higher degree scheduler as C, fixed rho 2",
+    "C": "finite rho scan, then joint degree/precision scheduler"
+  },
+  "development_mapping": "Cfixedbits is development Method C (always 1024); C is development Method D and final holdout C",
+  "development_runs": 158,
+  "selection": "minimum certified delta at each degree, threshold and precision ladder in higher_degree_baseline.py",
+  "budgets": {
+    "seconds": 90,
+    "process_mib": 768,
+    "rhos": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.5",
+      "1.75",
+      "2",
+      "2.5",
+      "3"
+    ],
+    "degrees": [
+      64,
+      80,
+      96,
+      128
+    ],
+    "bits": [
+      512,
+      768,
+      1024
+    ]
+  },
+  "degree64_historical": "Phase 3 A/B/C each 30/48 at 30 seconds; NF10 0/16"
+}

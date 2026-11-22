@@ -1,0 +1,17 @@
+case,degree,boundary_midpoint_panels,bits,m,p,nf,theta,ar,component,arb_enclosure,method
+0,32,16,128,2,12,10,0.3,1,B_cert,[6.8000277595359128530615356898461892007 +/- 2.37e-38],outward-rounded boundary and ROI boxes
+0,32,16,128,2,12,10,0.3,1,chebyshev,[1.357078712859494216815447868968126279e-8 +/- 3.01e-45],Bernstein ellipse
+0,32,16,128,2,12,10,0.3,1,boundary,[4.74074376037902391691350128821969253 +/- 2.63e-36],outward-rounded boundary and ROI boxes
+0,32,16,128,2,12,10,0.3,1,roi_norm_upper,[2.0592839855637368890711391673103100349 +/- 2.49e-38],outward-rounded boundary and ROI boxes
+0,32,16,128,2,12,10,0.3,1,roi_norm_lower,0,outward-rounded boundary and ROI boxes
+0,32,16,128,2,12,10,0.3,1,taylor,[2.23649184819530661617079434333098225e-11 +/- 7.92e-47],gamma moments and disk monomial norms
+0,32,16,128,2,12,10,0.3,1,arithmetic,,Included in all Arb enclosures; no separate assumed error
+0,32,16,128,2,12,10,0.3,1,ROI,[2.0592839855637368890711391673103100349 +/- 2.49e-38],Continuous ROI enclosed directly; lower endpoint recorded separately
+1,32,16,128,1,12,10,0.3,1,B_cert,[6.7995881643148663673296107190499016855 +/- 1.78e-38],outward-rounded boundary and ROI boxes
+1,32,16,128,1,12,10,0.3,1,chebyshev,[1.3373906711329695625123442882759909459e-8 +/- 7.57e-46],Bernstein ellipse
+1,32,16,128,1,12,10,0.3,1,boundary,[4.74043720443772490268558071491431545 +/- 4.72e-36],outward-rounded boundary and ROI boxes
+1,32,16,128,1,12,10,0.3,1,roi_norm_upper,[2.0591508282641133473370242833917490901 +/- 3.63e-38],outward-rounded boundary and ROI boxes
+1,32,16,128,1,12,10,0.3,1,roi_norm_lower,0,outward-rounded boundary and ROI boxes
+1,32,16,128,1,12,10,0.3,1,taylor,[1.18239121405977310095620394264339189e-7 +/- 3.57e-43],gamma moments and disk monomial norms
+1,32,16,128,1,12,10,0.3,1,arithmetic,,Included in all Arb enclosures; no separate assumed error
+1,32,16,128,1,12,10,0.3,1,ROI,[2.0591508282641133473370242833917490901 +/- 3.63e-38],Continuous ROI enclosed directly; lower endpoint recorded separately

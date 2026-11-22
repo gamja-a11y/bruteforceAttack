@@ -1,0 +1,16 @@
+{
+  "incident_aperture_rms_complex_nonuniformity": 0.08214993750406802,
+  "incident_aperture_max_complex_nonuniformity": 0.21959359864393882,
+  "scalar_RS_vs_Fresnel": 0.004417228614166875,
+  "Meep_vs_RS_raw": 0.678216481111991,
+  "Meep_vs_RS_phase_aligned": 0.15568144321301414,
+  "Meep_vs_Fresnel_phase_aligned": 0.16030181918340872,
+  "Meep_vs_Fresnel_intensity_L1": 0.11072143019831286,
+  "resolution": 6,
+  "p": 2.0,
+  "Nf_eff": 1.0,
+  "theta_ap": 0.1,
+  "physical_screen_thickness": 0.2,
+  "quadrature_order": 20,
+  "observation_order": 12
+}

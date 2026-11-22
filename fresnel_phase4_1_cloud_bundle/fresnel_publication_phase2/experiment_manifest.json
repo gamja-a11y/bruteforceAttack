@@ -1,0 +1,79 @@
+{
+  "python": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "cpu": "AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD",
+  "logical_cpus": 16,
+  "packages": {
+    "python-flint": "0.9.0",
+    "numpy": "2.5.5",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0"
+  },
+  "flint": "3.6.0",
+  "frozen_sha256": {
+    "repaired_certification.py": "954f078c856ef6ec6c15a0a1a383714ae4ad025250c5ecbf64904e6f6a75e8db",
+    "repaired_independent_verification.py": "219f26d04908572d87c9524264e9ae6aa51dee5d51a342618f040552e8d9227a"
+  },
+  "geometry_order": [
+    "p",
+    "NF",
+    "AR",
+    "theta"
+  ],
+  "geometries": [
+    [
+      "2",
+      "1",
+      "1",
+      "0.1"
+    ],
+    [
+      "8",
+      "1",
+      "1",
+      "0.1"
+    ],
+    [
+      "16",
+      "1",
+      "1",
+      "0.1"
+    ],
+    [
+      "8",
+      "3",
+      "2",
+      "0.3"
+    ],
+    [
+      "2",
+      "10",
+      "1",
+      "0.1"
+    ],
+    [
+      "16",
+      "10",
+      "4",
+      "0.3"
+    ]
+  ],
+  "area": "100*pi",
+  "radius": 5,
+  "z": "10/theta",
+  "wavelength": "10*theta/NF",
+  "raw_norm": "sqrt(int_disk |U_RS-U_model|^2 dA/(25*pi))",
+  "timing": "Serial cold child per candidate, parent wall clock; includes import, verification, IPC and trial persistence; excludes final report writing. Peak is child working set/high-water RSS, not sum across processes.",
+  "commands": [
+    "python -B run_pilot.py --out runs",
+    "python -B run_controls.py --out controls",
+    "python -B reference_benchmarks.py --out reference_runs.json",
+    "python -B legacy_control.py --out legacy_run",
+    "python -B stress_check.py --out stress128",
+    "python -B summarize.py --data . --out ."
+  ],
+  "artifact_status": "Norm enclosures/ratios/secants mathematically enclosed; resource measurements and direct/Taylor point estimates empirical",
+  "seed": "deterministic; three repetitions, no random sampling"
+}

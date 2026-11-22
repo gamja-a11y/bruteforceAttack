@@ -1,0 +1,247 @@
+{
+  "physical_conditions": {
+    "nf": 10.0,
+    "theta_ap": 0.3,
+    "aspect_ratio": 1.0,
+    "p": 12.0,
+    "a_eff": 10.0,
+    "area": 314.1592653589793,
+    "z": 33.333333333333336,
+    "wavelength": 0.3,
+    "roi_radius": 5.0
+  },
+  "plan": {
+    "aperture_pairs": 60817408,
+    "roi_additional_pairs": 27262976,
+    "probe_gauss_pairs": 65536,
+    "total_fixed_pairs": 88145920,
+    "workspace_budget_mib": 8.0
+  },
+  "quick": true,
+  "field_assessments": {
+    "U_RS": {
+      "status": "excellent",
+      "last_aperture_step": {
+        "field": "U_RS",
+        "aperture_order": 64,
+        "roi_order": 32,
+        "field_weighted_l2": 1.005998866854272,
+        "natural_scale": 31.415926535897935,
+        "previous_aperture_order": 48,
+        "abs_complex_l2": 5.305416601035975e-15,
+        "relative_complex_l2": 5.273779897611469e-15,
+        "reference_l2": 1.0059988668542716,
+        "max_abs_complex_difference": 1.8445073508227535e-14,
+        "intensity_l1_relative": 5.677884263287793e-15,
+        "weighted_phase_rms_rad": 3.7374892983380626e-15,
+        "near_zero_point_count": 0,
+        "near_zero_max_abs_difference": null,
+        "step_status": "excellent"
+      },
+      "reasons": [],
+      "adaptive_crosscheck_performed": true
+    },
+    "U_F": {
+      "status": "excellent",
+      "last_aperture_step": {
+        "field": "U_F",
+        "aperture_order": 64,
+        "roi_order": 32,
+        "field_weighted_l2": 1.0070541134050675,
+        "natural_scale": 31.415926535897935,
+        "previous_aperture_order": 48,
+        "abs_complex_l2": 5.440455431066252e-15,
+        "relative_complex_l2": 5.402346665037591e-15,
+        "reference_l2": 1.007054113405067,
+        "max_abs_complex_difference": 1.9648301169320783e-14,
+        "intensity_l1_relative": 5.223489876962749e-15,
+        "weighted_phase_rms_rad": 4.173208454554586e-15,
+        "near_zero_point_count": 0,
+        "near_zero_max_abs_difference": null,
+        "step_status": "excellent"
+      },
+      "reasons": [],
+      "adaptive_crosscheck_performed": true
+    },
+    "M0": {
+      "status": "excellent",
+      "last_aperture_step": {
+        "field": "M0",
+        "aperture_order": 64,
+        "roi_order": 32,
+        "field_weighted_l2": 10.070541134050675,
+        "natural_scale": 314.1592653589793,
+        "previous_aperture_order": 48,
+        "abs_complex_l2": 5.3178833902951096e-14,
+        "relative_complex_l2": 5.280633204817763e-15,
+        "reference_l2": 10.07054113405067,
+        "max_abs_complex_difference": 1.9268559495776252e-13,
+        "intensity_l1_relative": 5.0510689060803076e-15,
+        "weighted_phase_rms_rad": 4.090235370879116e-15,
+        "near_zero_point_count": 0,
+        "near_zero_max_abs_difference": null,
+        "step_status": "excellent"
+      },
+      "reasons": [],
+      "adaptive_crosscheck_performed": true
+    },
+    "M2": {
+      "status": "excellent",
+      "last_aperture_step": {
+        "field": "M2",
+        "aperture_order": 64,
+        "roi_order": 32,
+        "field_weighted_l2": 0.0954779733042219,
+        "natural_scale": 80.66023866493951,
+        "previous_aperture_order": 48,
+        "abs_complex_l2": 4.4825880791333184e-15,
+        "relative_complex_l2": 4.694892365227057e-14,
+        "reference_l2": 0.09547797330421928,
+        "max_abs_complex_difference": 1.3572483571024226e-14,
+        "intensity_l1_relative": 6.226939276964874e-14,
+        "weighted_phase_rms_rad": 2.695468612963331e-14,
+        "near_zero_point_count": 0,
+        "near_zero_max_abs_difference": null,
+        "step_status": "excellent"
+      },
+      "reasons": [],
+      "adaptive_crosscheck_performed": true
+    },
+    "M4": {
+      "status": "excellent",
+      "last_aperture_step": {
+        "field": "M4",
+        "aperture_order": 64,
+        "roi_order": 32,
+        "field_weighted_l2": 0.010578651438766047,
+        "natural_scale": 20.709477067469997,
+        "previous_aperture_order": 48,
+        "abs_complex_l2": 6.866637478730495e-16,
+        "relative_complex_l2": 6.491032924638785e-14,
+        "reference_l2": 0.010578651438765598,
+        "max_abs_complex_difference": 2.1685902993542514e-15,
+        "intensity_l1_relative": 9.200963345918685e-14,
+        "weighted_phase_rms_rad": 3.8092202124233e-14,
+        "near_zero_point_count": 0,
+        "near_zero_max_abs_difference": null,
+        "step_status": "excellent"
+      },
+      "reasons": [],
+      "adaptive_crosscheck_performed": true
+    }
+  },
+  "last_aperture_error_metrics_step": {
+    "aperture_order": 64,
+    "roi_order": 32,
+    "previous_aperture_order": 48,
+    "E": 0.07311487701823105,
+    "E_hat": 0.09163301418945291,
+    "E_res": 0.07173332371293191,
+    "rs_reference_norm": 1.005998866854272,
+    "E_abs_change": 2.456368441983159e-15,
+    "E_relative_change": 3.359601413773493e-14,
+    "E_step_status": "excellent",
+    "E_hat_abs_change": 3.858025010572419e-15,
+    "E_hat_relative_change": 4.210300233708394e-14,
+    "E_hat_step_status": "excellent",
+    "E_res_abs_change": 4.551914400963142e-15,
+    "E_res_relative_change": 6.345606428582121e-14,
+    "E_res_step_status": "excellent"
+  },
+  "last_roi_step": {
+    "roi_order": 32,
+    "aperture_order": 64,
+    "roi_weight_sum": 1.0,
+    "E": 0.07311487701823105,
+    "E_hat": 0.09163301418945291,
+    "E_res": 0.07173332371293191,
+    "rs_reference_norm": 1.005998866854272,
+    "UF_vs_M0_absolute_l2": 6.842433794255927e-16,
+    "UF_vs_M0_relative_l2": 6.794504588358396e-16,
+    "UF_vs_M0_pass": true,
+    "previous_roi_order": 24,
+    "E_abs_change": 0.0005581097184545469,
+    "E_relative_change": 0.007575500100861734,
+    "E_step_status": "needs_more_validation",
+    "E_hat_abs_change": 0.001381366806418316,
+    "E_hat_relative_change": 0.014851110028670006,
+    "E_hat_step_status": "needs_more_validation",
+    "E_res_abs_change": 0.0006727392809977167,
+    "E_res_relative_change": 0.00929120094617101,
+    "E_res_step_status": "needs_more_validation"
+  },
+  "roi_diagnosis": "Final ROI changes exceed tolerance with the aperture order fixed; refine disk quadrature.",
+  "mapping_checks": [
+    {
+      "order": 32,
+      "nodes": 8192,
+      "area_numeric": 314.1592653589793,
+      "area_relative_error": 0.0,
+      "x2_integral_relative_error": 2.220446049250313e-15,
+      "y2_integral_relative_error": 1.9984014443252818e-15,
+      "max_normalized_boundary_expression": 0.9837061359756153,
+      "min_weight": 1.1925790925325347e-06,
+      "passed": true
+    },
+    {
+      "order": 48,
+      "nodes": 18432,
+      "area_numeric": 314.1592653589794,
+      "area_relative_error": 2.220446049250313e-16,
+      "x2_integral_relative_error": 2.220446049250313e-15,
+      "y2_integral_relative_error": 2.220446049250313e-15,
+      "max_normalized_boundary_expression": 0.9926509145192082,
+      "min_weight": 1.0804729187533627e-07,
+      "passed": true
+    },
+    {
+      "order": 64,
+      "nodes": 32768,
+      "area_numeric": 314.1592653589793,
+      "area_relative_error": 0.0,
+      "x2_integral_relative_error": 2.220446049250313e-15,
+      "y2_integral_relative_error": 1.9984014443252818e-15,
+      "max_normalized_boundary_expression": 0.9958382101470138,
+      "min_weight": 1.953456601290126e-08,
+      "passed": true
+    }
+  ],
+  "fresnel_M0_identity": [
+    {
+      "aperture_order": 32,
+      "UF_vs_M0_absolute_l2": 9.153563596208366e-16,
+      "UF_vs_M0_relative_l2": 9.08944763014306e-16,
+      "UF_vs_M0_pass": true
+    },
+    {
+      "aperture_order": 48,
+      "UF_vs_M0_absolute_l2": 6.721496701197804e-16,
+      "UF_vs_M0_relative_l2": 6.674414623530979e-16,
+      "UF_vs_M0_pass": true
+    },
+    {
+      "aperture_order": 64,
+      "UF_vs_M0_absolute_l2": 6.842433794255927e-16,
+      "UF_vs_M0_relative_l2": 6.794504588358396e-16,
+      "UF_vs_M0_pass": true
+    }
+  ],
+  "adaptive_probe_count": 2,
+  "adaptive_aperture_area_check_pass": true,
+  "thresholds": {
+    "relative_excellent": 0.0001,
+    "relative_converged": 0.001,
+    "near_zero_natural_scale_fraction": 1e-08,
+    "absolute_excellent_scale_fraction": 1e-10,
+    "absolute_converged_scale_fraction": 1e-09
+  },
+  "notes": [
+    "Each order supplies separate radial/sector or radial/angular Gauss-Legendre rules.",
+    "ROI coordinates and normalized weights use the same quarter-disk rule as v3.",
+    "Field comparisons are raw complex differences.",
+    "A quick result applies only to its reduced order sequence.",
+    "Adaptive probes use nested Cartesian integration; inner and outer estimates are not rigorous bounds.",
+    "For near-zero norms use absolute change divided by a natural scale. Near-zero sample points also have a separate maximum absolute-change check.",
+    "Diagnostics address numerical integration only. No FDTD or shape derivative was executed."
+  ]
+}

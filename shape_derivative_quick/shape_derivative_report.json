@@ -1,0 +1,156 @@
+{
+  "quick": true,
+  "cost": {
+    "unique_field_integrations": 94,
+    "point_pairs": 3235905536
+  },
+  "checks": [
+    {
+      "p": 11.98,
+      "error_quadrature_checks": {
+        "aperture": true,
+        "radial": true,
+        "angular": true,
+        "joint": true
+      },
+      "derivative_quadrature_checks": {
+        "aperture": true,
+        "radial": true,
+        "angular": true,
+        "joint": true
+      },
+      "finite_difference_checks_pass": true,
+      "richardson_check_pass": true
+    },
+    {
+      "p": 11.99,
+      "error_quadrature_checks": {
+        "aperture": true,
+        "radial": true,
+        "angular": true,
+        "joint": true
+      },
+      "derivative_quadrature_checks": {
+        "aperture": true,
+        "radial": true,
+        "angular": true,
+        "joint": true
+      },
+      "finite_difference_checks_pass": true,
+      "richardson_check_pass": true
+    },
+    {
+      "p": 11.995,
+      "error_quadrature_checks": {
+        "aperture": true,
+        "radial": true,
+        "angular": true,
+        "joint": true
+      },
+      "derivative_quadrature_checks": {
+        "aperture": true,
+        "radial": true,
+        "angular": true,
+        "joint": true
+      },
+      "finite_difference_checks_pass": true,
+      "richardson_check_pass": true
+    },
+    {
+      "p": 12.0,
+      "error_quadrature_checks": {
+        "aperture": true,
+        "radial": true,
+        "angular": true,
+        "joint": true
+      },
+      "derivative_quadrature_checks": {
+        "aperture": true,
+        "radial": true,
+        "angular": true,
+        "joint": true
+      },
+      "finite_difference_checks_pass": true,
+      "richardson_check_pass": true
+    }
+  ],
+  "p12": {
+    "p": 12.0,
+    "aperture_order": 64,
+    "radial_order": 32,
+    "angular_order": 32,
+    "h": 0.00125,
+    "stencil": "backward_2",
+    "E": 0.07312571141853992,
+    "E_hat": 0.09166266504947382,
+    "E_res": 0.07175191945343944,
+    "semi_axis": 8.907549511506767,
+    "area_relative_error": 3.3306690738754696e-16,
+    "jacobian_second_moment_relative_error": 2.220446049250313e-15,
+    "S_E": -0.0009448149587309995,
+    "S_E_hat": -0.0014019685769695034,
+    "sensitivity_abs_difference": 0.00045715361823850387,
+    "sensitivity_relative_difference": 0.48385518668387334,
+    "sensitivity_sign_agrees": true,
+    "E_abs_change": 0.0,
+    "E_rel_change": 0.0,
+    "E_hat_abs_change": 0.0,
+    "E_hat_rel_change": 0.0,
+    "E_res_abs_change": 0.0,
+    "E_res_rel_change": 0.0,
+    "S_E_abs_change": 1.3911649610065524e-10,
+    "S_E_rel_change": 1.472420549813325e-07,
+    "S_E_hat_abs_change": 1.0728917754221357e-10,
+    "S_E_hat_rel_change": 7.65275194499223e-08,
+    "S_E_richardson": -0.0009448150051031649,
+    "S_E_hat_richardson": -0.0014019686127325626,
+    "converged": true,
+    "S_E_provisional": -0.0009448149587309995,
+    "S_E_hat_provisional": -0.0014019685769695034
+  },
+  "physical_conditions": {
+    "nf": 10.0,
+    "theta_ap": 0.3,
+    "ar": 1.0,
+    "radius": 10.0,
+    "area": 314.1592653589793,
+    "z": 33.333333333333336,
+    "wavelength": 0.3,
+    "roi_radius": 5.0
+  },
+  "geometry_at_p12": {
+    "semi_axis_derivative_analytic": -0.0071617825776062955,
+    "semi_axis_derivative_backward": -0.007161782296094543,
+    "ray_boundary_derivatives": [
+      {
+        "ray_slope_y_over_x": 0.0,
+        "radial_boundary_derivative": -0.0071617825776062955
+      },
+      {
+        "ray_slope_y_over_x": 0.5,
+        "radial_boundary_derivative": -0.007849666230586602
+      },
+      {
+        "ray_slope_y_over_x": 1.0,
+        "radial_boundary_derivative": 0.04767367689873522
+      }
+    ]
+  },
+  "cache": {
+    "hits": 86,
+    "misses": 94,
+    "maxsize": null,
+    "currsize": 94
+  },
+  "tolerances": {
+    "slope_relative": 0.01,
+    "slope_absolute_floor": 1e-07,
+    "error_quadrature_absolute": 1e-08
+  },
+  "notes": [
+    "Only octant-symmetric AR=1 fields are evaluated. Quadrature is evaluated anew for each p.",
+    "Separate aperture and ROI checks include the slopes at the smallest h. The shape reported in results uses the 32x32 ROI only after checking the refined rules.",
+    "Richardson is used only for consecutive matching second-order stencils. An interior point too close to the domain endpoint uses a one-sided stencil for that step.",
+    "A persistent direct/predicted slope discrepancy after convergence refers to the scalar moment model."
+  ]
+}

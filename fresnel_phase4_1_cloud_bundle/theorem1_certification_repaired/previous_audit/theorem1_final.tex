@@ -1,0 +1,154 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\newtheorem{lemma}{Lemma}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}{Corollary}
+\newtheorem{proposition}{Proposition}
+\newcommand{\ii}{\mathrm i}
+\title{A two-sided certificate for continuous-domain scalar diffraction residuals}
+\author{}\date{}
+\begin{document}\maketitle
+\paragraph{Definitions and notation.}
+Let $A,\Omega\subset\mathbb R^2$ be bounded measurable sets of positive
+area, with probability measure $d\nu=d\mathbf r/|\Omega|$ on $\Omega$.
+Fix real $\lambda,z>0$, $K=2\pi z/\lambda$ and
+$q=|\mathbf r-\mathbf s|^2/z^2\in[0,Q]$, $0<Q<\infty$. Let $t=\sqrt{1+q}$
+be the principal branch. All three fields use unit incident amplitude,
+the common multiplier $e^{\ii K}/(\ii\lambda z)$ and kernels
+\[
+ H_R=a e^{\ii K\phi},\quad a=(1+q)^{-1}+\ii/(Kt^3),\quad
+ \phi=q/(1+t),\qquad H_F=e^{\ii Kq/2},
+\]
+\[
+ H_P=b e^{\ii K\psi},\quad
+ b=(1+q)^{-1}+\frac{\ii(1+q/4-q^2/48)}{K(1+7q/4+35q^2/48)},\quad
+ \psi=\frac{q/2+q^2/4}{1+3q/4+q^2/16}.
+\]
+Choose $D=H_R-H_P$ or $H_R-H_F$. Removing the common unit-modulus
+carrier leaves the absolute norm invariant. No fit of phase or amplitude is made.
+Write $Ef=(\ii\lambda z)^{-1}\int_A f(q(\mathbf r,\mathbf s))\,d\mathbf s$,
+$N=\|ED\|_{L^2(\nu)}$.
+
+\begin{lemma}[Uniform spectral interpolation error]
+Suppose $f(\xi)=D(Q(1+\xi)/2)$ is holomorphic in a neighborhood of
+the filled closed Bernstein ellipse of parameter $\rho>1$ and $|f|\le M$
+there. For integer $n\ge1$, let $P_n$ interpolate $D$ at
+$Q(1+\cos(j\pi/n))/2$, $0\le j\le n$. Then
+$\|D-P_n\|_{\infty,[0,Q]}\le\epsilon_n=4M\rho^{-n}/(\rho-1)$.
+\end{lemma}
+\begin{proof}
+The Laurent expansion after $\xi=(w+w^{-1})/2$ gives
+$|a_j|\le2M\rho^{-j}$ for positive Chebyshev indices by Cauchy's formula.
+On the Lobatto nodes $T_j$ aliases to $T_{\ell}$ where $\ell$ is obtained
+by reducing modulo $2n$ and reflecting into $[0,n]$. Uniform absolute
+convergence permits termwise interpolation. Each tail term contributes at
+most $2|a_j|$ since $|T_j-T_\ell|\le2$ on $[-1,1]$. The geometric
+sum gives the claim. This argument applies to complex coefficients
+directly. The classical truncation estimate has a different constant
+\cite[Thm.~8.2]{tref}.
+\end{proof}
+
+\begin{lemma}[Exact moment representation]
+For a polynomial $P_n$, $EP_n$ is a polynomial in the observer coordinates.
+Given its coefficients $C_\alpha$ in a real monomial basis $b_\alpha$,
+the squared norm is $\sum_{\alpha,\beta} C_\alpha\overline{C_\beta}
+\int_\Omega b_\alpha b_\beta\,d\nu$.
+\end{lemma}
+\begin{proof}
+Expand $((x-s_x)^2+(y-s_y)^2)^d$ by the binomial theorem. Each
+source monomial is integrable by boundedness of $A$; the sums are
+finite. The Hermitian identity follows by pointwise multiplication and
+integration. Computing $(\Re EP_n)^2+(\Im EP_n)^2$ gives the same
+signed cross terms. A global unit phase drops out of this expression.
+\end{proof}
+
+\begin{theorem}[Certified continuous-domain $L^2$ error bounds]
+Under the assumptions of Lemma~1 set $G_n=\|EP_n\|_{L^2(\nu)}^2$
+and $\delta_n=|A|\epsilon_n/(\lambda z)$. Then
+\[
+ \max(0,\sqrt{G_n}-\delta_n)\ \le N\le\sqrt{G_n}+\delta_n .
+\]
+\end{theorem}
+\begin{proof}
+For every observer, the magnitude of $E(D-P_n)$ is bounded by
+$\int_A\epsilon_n/(\lambda z)=\delta_n$. Because $\nu(\Omega)=1$,
+the same constant bounds its $L^2(\nu)$ norm. Apply the reverse triangle
+inequality to $ED,EP_n$, and use $N\ge0$. This estimate leaves all
+phase cancellation inside $EP_n$ intact. Lebesgue area in place of
+$\nu$ would produce an additional factor $\sqrt{|\Omega|}$ in the slack.
+For prescribed nonuniform illumination $w$, replace $|A|$ by
+$\int_A |w|$ and use source moments weighted by $w$.
+\end{proof}
+
+\begin{corollary}[Superelliptical apertures]
+Let $A$ be a centered axis-aligned superellipse with positive semiaxes
+$a_x,a_y$ and $p>0$. Its even moments are
+\[
+ \mu_{ij}=\frac{4a_x^{2i+1}a_y^{2j+1}
+ \Gamma((2i+1)/p)\Gamma((2j+1)/p)}
+ {p^2\Gamma(1+(2i+2j+2)/p)}.
+\]
+For a concentric disk of radius $R$, take $Q\ge (R+r_A)^2/z^2$ with
+\[
+ r_A=\begin{cases}\max(a_x,a_y),&0<p\le2,\\
+ (a_x^{2p/(p-2)}+a_y^{2p/(p-2)})^{(p-2)/(2p)},&p>2.
+ \end{cases}
+\]
+With $X=(x/R)^2$, $Y=(y/R)^2$, the disk average of $X^iY^j$ is
+$(1/2)_i(1/2)_j/(i+j+1)!$.
+\end{corollary}
+\begin{proof}
+In each quadrant substitute $u=(|s_x|/a_x)^p$,
+$v=(|s_y|/a_y)^p$. Integrating $u^{(2i+1)/p-1}v^{(2j+1)/p-1}$
+over $u+v\le1$ gives the Dirichlet integral above. Reflection removes
+odd moments. The area is $\mu_{00}$ and $AR=a_x/a_y$ fixes the axis ratio.
+For $p\le2$, $u^{2/p}+v^{2/p}\le u+v\le1$; the longer axis attains
+the bound. For $p>2$, apply H\"older with conjugate exponents
+$p/(p-2),p/2$ to $(a_x^2,a_y^2)$ and $(u^{2/p},v^{2/p})$.
+The equality case is attained on the source boundary. An opposite
+point on the observer rim realizes the maximum separation.
+For the disk moment, polar integration gives a radial factor
+$1/(2i+2j+2)$ and an angular integral
+$2B(i+1/2,j+1/2)$, divided by $\pi$ after rescaling to unit radius.
+\end{proof}
+
+\begin{proposition}[Validated interval-arithmetic certificate]
+Assume verified finite enclosures $G_n\in[L,H]$, $0\le\delta_n\le d$,
+$L\le H$, $H\ge0$. Then valid endpoints are the outward roundings of
+$\max(0,\sqrt{\max(0,L)}-d)$ and $\sqrt H+d$.
+\end{proposition}
+\begin{proof}
+Monotonicity of the square root on $[0,\infty)$ and of subtraction
+in its first argument gives the result. $H<0$ is incompatible with
+the squared norm and must abort certification. A negative $L$ is
+consistent with an enclosure of a nonnegative exact quantity.
+An implementation must also establish validity of its physical domain,
+model identity, contour covering and moment enclosures before using
+the proposition.
+\end{proof}
+
+\begin{corollary}[Geometric convergence]
+For fixed admissible $\rho,M,A,\lambda,z$ the exact-arithmetic
+width is at most $8|A|M\rho^{-n}/((\rho-1)\lambda z)$.
+\end{corollary}
+\begin{proof}
+The width is at most $2\delta_n$. A rounded squared-norm enclosure
+can add $\sqrt{H}-\sqrt{\max(0,L)}$ plus endpoint rounding. Fixed
+working precision alone does not imply geometric convergence.
+\end{proof}
+\paragraph{Assumptions and limitations.}
+The general theorem does not require reflection symmetry or a disk.
+Those assumptions enter the particular moment evaluator. For the two
+specified scalar kernels the holomorphic neighborhood must be checked
+for each geometry and parameter choice. The construction combines
+classical interpolation, moment identities and norm inequalities.
+No assertion of priority for these results, a Maxwell boundary model,
+or universal certification by an unguarded implementation follows.
+\begin{thebibliography}{1}
+\bibitem{tref} L.\ N.\ Trefethen, \emph{Approximation Theory and
+Approximation Practice}, SIAM, 2013, Theorems 8.1--8.2.
+\url{https://people.maths.ox.ac.uk/trefethen/trefethen_sample.pdf}.
+\end{thebibliography}
+\end{document}

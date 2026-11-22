@@ -1,0 +1,180 @@
+{
+  "backend": "0.9.0",
+  "proof": {
+    "symbolic_identities_verified": true,
+    "range": "All real q >= 0 and K > 0, with t=sqrt(1+q)>=1; no upper restriction on q.",
+    "polynomial_coefficients_descending_in_t_minus_1": {
+      "positive_amplitude_denominator": [
+        35,
+        245,
+        749,
+        1295,
+        1364,
+        872,
+        312,
+        48
+      ],
+      "phase_inequality": [
+        1,
+        14,
+        96,
+        424,
+        1296,
+        2752,
+        3968,
+        3712,
+        2048,
+        0
+      ],
+      "amplitude_inequality": [
+        245,
+        4165,
+        32193,
+        149695,
+        466718,
+        1028664,
+        1644664,
+        1923152,
+        1632960,
+        982016,
+        395392,
+        86016,
+        0
+      ]
+    },
+    "kernel": "Write Delta F=e^(iK phi_PP)[A-A_PP+A(expm1(iK Delta phi))]. Use |expm1(iu)|<=|u| for real u and |A|<=sqrt(1+1/K^2).",
+    "field_bounds": "Triangle inequality pointwise in the area integral for B0 and in the fixed-AR boundary transport integral for B1; then use monotonicity of the ROI L2 norm.",
+    "prediction_bounds": "Reverse triangle inequality gives |D-D_tilde|<=B0. Also |N-||U_PP||||<=B0, so if B0<||U_PP|| then N>=||U_PP||-B0>0, yielding the practical common-factor bound.",
+    "sensitivity_bound": "In the real inner product Re<.,.>, derivative of ||X|| is Re<X/||X||,X'> at nonzero X. For X=U_RS-U_F and Y=U_PP-U_F, ||X/||X||-Y/||Y||||<=2||X-Y||/min(||X||,||Y||) by the triangle and reverse triangle inequalities. Hence |D'-D_tilde'|<=B1+2B0||Y'||/min(D,D_tilde). The quotient rule and |N'|<=||U_RS'|| give the proposed BS. Requires differentiable fields and N,D,D_tilde>0."
+  },
+  "geometric_upper": "[0.00050423241118794959262760637142125952007 +/- 4.65e-42]",
+  "taylor_phase_remainder": "[1.5913325612871314504295932629145666706e-11 +/- 1.83e-50]",
+  "v4_global_gradient": "[1.4869117883057159844436901937700847410 +/- 1.30e-38]",
+  "independent_series_gradient_upper": "[0.65856316895078609065582685417333179945 +/- 3.58e-39]",
+  "third_directional_upper": "[64.355647621187058729002087144893125009 +/- 9.43e-38]",
+  "requested_target": "0.0005042324",
+  "empirical_reference": 4.678284775e-06,
+  "history": [
+    {
+      "step": 0,
+      "cells": 1,
+      "upper_ball": "[953.80801720323733601596476537096485958 +/- 1.87e-36]",
+      "display": 953.8080172032373,
+      "meets_target": false,
+      "improves_geometric": false,
+      "elapsed_seconds": 37.783870699999625,
+      "status": "interval-certified"
+    },
+    {
+      "step": 1,
+      "cells": 2,
+      "upper_ball": "[313.96042469268063704664235926141166998 +/- 1.72e-37]",
+      "display": 313.96042469268065,
+      "meets_target": false,
+      "improves_geometric": false,
+      "elapsed_seconds": 111.4887660999998,
+      "status": "interval-certified"
+    }
+  ],
+  "cells": [
+    {
+      "cell": [
+        "0",
+        "5.0000000000000000000000000000000000000",
+        "0",
+        "1.0000000000000000000000000000000000000"
+      ],
+      "weight": "1.0000000000000000000000000000000000000",
+      "derivatives": [
+        "[+/- 2.22e-6] + [+/- 2.28e-6]j",
+        "[+/- 2.20e-5] + [+/- 1.98e-5]j",
+        "[+/- 2.21e-5] + [+/- 2.32e-5]j",
+        "[+/- 1.74e-4] + [+/- 1.69e-4]j",
+        "[+/- 1.65e-4] + [+/- 2.08e-4]j",
+        "[+/- 1.27e-4] + [+/- 1.26e-4]j"
+      ],
+      "gl_errors": [
+        "[1.7328254402822034880182692694515917540e-6 +/- 4.50e-44]",
+        "[1.5557685912523094010516595469712079637e-5 +/- 3.86e-43]",
+        "[1.3457214463377945490539620363310256476e-5 +/- 3.00e-43]",
+        "[0.00014131496142238711766104669049374326067 +/- 4.19e-42]",
+        "[0.00012092097378720486558363204875817635008 +/- 2.79e-43]",
+        "[0.00010629602590834583441840961222931147491 +/- 3.87e-42]"
+      ],
+      "order": 16,
+      "polynomial_weighted_norm_upper": "[0.00060796567554286073105281560598545612780 +/- 5.83e-43]",
+      "spatial_remainder_upper": "[953.80740923754587982962084124085457819 +/- 4.73e-36]",
+      "local_weighted_upper": "[953.80801720322142269035189405646056364 +/- 2.29e-36]",
+      "status": "interval-certified",
+      "step": 0,
+      "seconds": 37.783846399999675
+    },
+    {
+      "cell": [
+        "0",
+        "2.5000000000000000000000000000000000000",
+        "0",
+        "1.0000000000000000000000000000000000000"
+      ],
+      "weight": "0.25000000000000000000000000000000000000",
+      "derivatives": [
+        "[2e-6 +/- 6.16e-7] + [+/- 3.19e-7]j",
+        "[+/- 7.04e-6] + [+/- 7.59e-6]j",
+        "[+/- 7.52e-6] + [+/- 4.52e-6]j",
+        "[+/- 6.09e-5] + [+/- 4.03e-5]j",
+        "[+/- 2.30e-5] + [+/- 4.38e-5]j",
+        "[+/- 4.98e-5] + [+/- 1.66e-5]j"
+      ],
+      "gl_errors": [
+        "[2.3063189971938664179330490553438547357e-7 +/- 2.78e-45]",
+        "[1.8663873937884972597394643860581533605e-6 +/- 3.70e-44]",
+        "[1.7194946307363523092772919207677386604e-6 +/- 2.13e-44]",
+        "[1.5337443014080853162596346721491241459e-5 +/- 2.07e-43]",
+        "[1.3922079159357423647905536425631594773e-5 +/- 1.41e-44]",
+        "[1.3040174947247403932829844159366551369e-5 +/- 3.98e-43]"
+      ],
+      "order": 16,
+      "polynomial_weighted_norm_upper": "[1.8814173103326823566311149466833710204e-5 +/- 4.03e-43]",
+      "spatial_remainder_upper": "[119.22592615469323497870260515510682227 +/- 3.16e-36]",
+      "local_weighted_upper": "[59.612981891519720816174868888702877970 +/- 4.40e-37]",
+      "status": "interval-certified",
+      "step": 1,
+      "seconds": 36.98343339999974
+    },
+    {
+      "cell": [
+        "2.5000000000000000000000000000000000000",
+        "5.0000000000000000000000000000000000000",
+        "0",
+        "1.0000000000000000000000000000000000000"
+      ],
+      "weight": "0.75000000000000000000000000000000000000",
+      "derivatives": [
+        "[+/- 1.89e-5] + [+/- 1.62e-5]j",
+        "[+/- 1.58e-4] + [+/- 1.76e-4]j",
+        "[+/- 1.28e-4] + [+/- 1.45e-4]j",
+        "[+/- 1.66e-3] + [+/- 1.56e-3]j",
+        "[+/- 1.37e-3] + [+/- 1.25e-3]j",
+        "[+/- 1.16e-3] + [+/- 1.11e-3]j"
+      ],
+      "gl_errors": [
+        "[1.5621521281774078352278845759944121698e-5 +/- 4.84e-43]",
+        "[0.00015308536289501981270957861559007178188 +/- 3.27e-42]",
+        "[0.00012659817259513497057902750728263640084 +/- 2.51e-42]",
+        "[0.0015149009388869771021975299626793263450 +/- 2.36e-41]",
+        "[0.0012419270499517937363721660762182905127 +/- 4.82e-41]",
+        "[0.0010418422190985505025113983306954554459 +/- 5.39e-42]"
+      ],
+      "order": 16,
+      "polynomial_weighted_norm_upper": "[0.0018217281784105359099437712307597570306 +/- 1.77e-41]",
+      "spatial_remainder_upper": "[355.93317270665935095777244491324473786 +/- 3.04e-36]",
+      "local_weighted_upper": "[308.24899134173941206916368904375497802 +/- 4.37e-36]",
+      "status": "interval-certified",
+      "step": 1,
+      "seconds": 36.72138380000024
+    }
+  ],
+  "adaptive_guarantee": "unverified",
+  "scope": "p=12, NF=10, theta=0.3, AR=1, radius=5, Taylor residual m=2",
+  "reproduce": "python fresnel_certified_bound_v5.py --out NEW_DIRECTORY"
+}

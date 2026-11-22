@@ -1,0 +1,23 @@
+{
+  "fresnel_publication_phase4/src/build_copies.py": "457e2988e0b29301b862a528fd6ac1eabe477bbdf1348c67a5dddc271935457f",
+  "fresnel_publication_phase4/src/common.py": "9c0a46acff9d370c94a19b0503d7f8e868e8dccf73118928e481fbbbb95331ca",
+  "fresnel_publication_phase4/src/compute.py": "74fff9da7624749c26a8143a51c2d953282c19a207191fb383b7268b9c0a0007",
+  "fresnel_publication_phase4/src/development.py": "34037ed360cd371fd054be8e4bce6304dbd9699995cf683f4f15c6e6f7c26d57",
+  "fresnel_publication_phase4/src/dev_policies.py": "f10ac835d53f51a670f9b7f0648b4ca9a069a3fc25f0afa302fbbb70d51e875e",
+  "fresnel_publication_phase4/src/experiment.py": "075f67a59e4af35a91ea90b93acf8de71ebc0503eeccf18618acba08f10639c6",
+  "fresnel_publication_phase4/src/freeze.py": "5d588fe5400f3d953e061e39817cf862d8a215fdfbe87071989822dfb816a26d",
+  "fresnel_publication_phase4/src/frozen_rho_policy.py": "e784c413c46fb9765e03d94317f386d6044b5ecdcbe429f5dcc64e9e7662433c",
+  "fresnel_publication_phase4/src/higher_degree_baseline.py": "587182ef92cb996b54ba345712842cb1f17c28a2ab984a9ea93bd657e11da4aa",
+  "fresnel_publication_phase4/src/integrity.py": "a3a116c4d58a65f87f6897485415fc5eca35181a7434c0677f39ba29faf169cc",
+  "fresnel_publication_phase4/src/rho_certifier.py": "f05df3e0bf2dbb5afd850835f49fb5b520221b0bf8c88e7703d09212480a8087",
+  "fresnel_publication_phase4/src/rho_independent_verifier.py": "d8ec799c4ee0279e4510752f71e626d8d0d6d2e24fcb5ed0e65d9709429fcd82",
+  "fresnel_publication_phase4/policy_manifest.json": "e1bba2097f71b2d715c494487be92a9a85bffabe2a1f95b5fcc5fcd49512c93d",
+  "fresnel_publication_phase4/experiments/holdout_manifest.json": "d1276f495657ee34a703ea16b7e8bdc6aec5573cef085f0f6b78b9f7ce5a9356",
+  "fresnel_publication_phase4/experiments/development_results.csv": "09c6973931b97b4adbcc4e15de36fb6966a6855f502895aa40e768885d64e2b8",
+  "fresnel_publication_phase4/experiments/development_policy_comparison.csv": "b06c2fd07650253aa8d844df3b0e1f50dc25382ef912ce372e620ce5c7940026",
+  "fresnel_publication_phase4/experiments/rho_sweep_results.csv": "d5734918528eb65d452769c6469e3c69e28e87ccba3426e25490ffed9870319d",
+  "fresnel_publication_phase3/frozen_selection_rule.py": "7b12f9921d35becdf403b71afd46d5d983c063f3a73109a3d461a81ebee5befe",
+  "fresnel_publication_phase3/experiment.py": "9247a6e86c89b22be1ee5045cf383b8c2cd0316de9ba7d3e03c62f610f9b4707",
+  "fresnel_publication_phase3_audit_repaired/repaired_analyze.py": "a172aeabfe7067d326f242e050e451c6a5bbf0b0d20c1271bc190b3558fb6cc3",
+  "fresnel_publication_phase2/adaptive_certification.py": "45895413f0cb05f75477074338010d9ea53162332062e5093ec8a204f81db564"
+}

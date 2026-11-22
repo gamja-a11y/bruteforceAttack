@@ -1,0 +1,28 @@
+{
+  "params": {
+    "nf": "16",
+    "ar": "4",
+    "p": "6",
+    "theta": "0.2",
+    "radius": "5",
+    "model": "Fresnel"
+  },
+  "method": "C",
+  "n": 128,
+  "bits": 1024,
+  "manifest": "76642499b2d9a289c2fd246eab1429e038b5a52c1a9cf1b0a8851ca0d3696338",
+  "wall_s": 20.398039673999847,
+  "peak_mib": 158.73046875,
+  "verified": true,
+  "target_met": false,
+  "rho": "1.2",
+  "M": "103421112178.852774290951",
+  "epsilon": "151.509444325122929846103",
+  "delta": "7615.69531586044776884063",
+  "lower": "0",
+  "upper": "7615.73499728520498112640",
+  "width": "7615.73499728520498112640",
+  "relative": "2",
+  "reason": "target_width_unmet",
+  "certificate_sha256": "bb4041f7ba34d542a81bd4828bbd70bb0c91ecc1a3e6209d25370ad3da609458"
+}

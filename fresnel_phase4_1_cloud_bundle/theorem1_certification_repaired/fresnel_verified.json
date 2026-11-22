@@ -1,0 +1,36 @@
+[
+  {
+    "model": "Fresnel",
+    "inputs": {
+      "p": "12",
+      "nf": "10",
+      "theta": "0.3",
+      "ar": "1",
+      "radius": "5",
+      "degree": 96,
+      "bits": 768,
+      "model": "Fresnel",
+      "Q": null
+    },
+    "verified": true,
+    "stages": [
+      "physical",
+      "geometry",
+      "identity",
+      "analyticity",
+      "contour",
+      "interpolation",
+      "source",
+      "gram",
+      "remainder",
+      "endpoints"
+    ],
+    "endpoint_display": [
+      0.07356438911682356,
+      0.07356438911830926
+    ],
+    "generator_sha256": "954f078c856ef6ec6c15a0a1a383714ae4ad025250c5ecbf64904e6f6a75e8db",
+    "verifier_sha256": "219f26d04908572d87c9524264e9ae6aa51dee5d51a342618f040552e8d9227a",
+    "trust": "Local reviewed source, CPython and FLINT/Arb. Independent numerical replay of contour, Lobatto/DCT-I, source and Gram; analytic theorems rely on the written proof."
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "rho": "2",
+  "M": "5.94171883024273856138701E+34",
+  "epsilon": "0.000698445691912474947740878",
+  "delta": "0.0351077096742987417822823",
+  "lower": "0",
+  "upper": "0.0351118900165308521143776",
+  "width": "0.0351118900165308521143776",
+  "relative": "2",
+  "target_met": false,
+  "verified": true,
+  "reason": "target_width_unmet",
+  "certificate_sha256": "4ee72aaf072a9f81de290e79effe16c6464eb17735f8748b7ec244fdc8efd80d"
+}

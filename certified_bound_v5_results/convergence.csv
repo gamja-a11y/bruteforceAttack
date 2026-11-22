@@ -1,0 +1,3 @@
+step,cells,upper_ball,display,meets_target,improves_geometric,elapsed_seconds,status
+0,1,[953.80801720323733601596476537096485958 +/- 1.87e-36],953.8080172032373,False,False,37.783870699999625,interval-certified
+1,2,[313.96042469268063704664235926141166998 +/- 1.72e-37],313.96042469268065,False,False,111.4887660999998,interval-certified

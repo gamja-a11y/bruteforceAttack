@@ -1,0 +1,21 @@
+{
+  "source": "certified_bound_v5_results\\certificate.json",
+  "gradient_upper": "[0.65856316895078609065582685417333179945 +/- 2.31e-39]",
+  "records": [
+    {
+      "cells": 1,
+      "upper_ball": "[2.9394968630941081810748060687593620129 +/- 1.81e-38]",
+      "display": 2.9394968630941083,
+      "status": "interval-certified",
+      "method": "first-order fallback"
+    },
+    {
+      "cells": 2,
+      "upper_ball": "[1.9746218712547846360361636041285009803 +/- 4.98e-38]",
+      "display": 1.9746218712547847,
+      "status": "interval-certified",
+      "method": "first-order fallback"
+    }
+  ],
+  "proof": "Straight segments remain in the convex disk. Add L times radial-plus-arc distance to each certified center radius, integrate weighted squares, add the phase remainder."
+}

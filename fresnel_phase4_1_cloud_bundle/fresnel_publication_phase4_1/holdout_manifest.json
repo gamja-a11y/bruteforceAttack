@@ -1,0 +1,174 @@
+{
+  "cases": [
+    {
+      "nf": "12",
+      "ar": "3",
+      "p": "6",
+      "theta": "0.2"
+    },
+    {
+      "nf": "12",
+      "ar": "3",
+      "p": "6",
+      "theta": "0.3"
+    },
+    {
+      "nf": "12",
+      "ar": "3",
+      "p": "10",
+      "theta": "0.2"
+    },
+    {
+      "nf": "12",
+      "ar": "3",
+      "p": "10",
+      "theta": "0.3"
+    },
+    {
+      "nf": "12",
+      "ar": "4",
+      "p": "6",
+      "theta": "0.2"
+    },
+    {
+      "nf": "12",
+      "ar": "4",
+      "p": "6",
+      "theta": "0.3"
+    },
+    {
+      "nf": "12",
+      "ar": "4",
+      "p": "10",
+      "theta": "0.2"
+    },
+    {
+      "nf": "12",
+      "ar": "4",
+      "p": "10",
+      "theta": "0.3"
+    },
+    {
+      "nf": "14",
+      "ar": "3",
+      "p": "6",
+      "theta": "0.2"
+    },
+    {
+      "nf": "14",
+      "ar": "3",
+      "p": "6",
+      "theta": "0.3"
+    },
+    {
+      "nf": "14",
+      "ar": "3",
+      "p": "10",
+      "theta": "0.2"
+    },
+    {
+      "nf": "14",
+      "ar": "3",
+      "p": "10",
+      "theta": "0.3"
+    },
+    {
+      "nf": "14",
+      "ar": "4",
+      "p": "6",
+      "theta": "0.2"
+    },
+    {
+      "nf": "14",
+      "ar": "4",
+      "p": "6",
+      "theta": "0.3"
+    },
+    {
+      "nf": "14",
+      "ar": "4",
+      "p": "10",
+      "theta": "0.2"
+    },
+    {
+      "nf": "14",
+      "ar": "4",
+      "p": "10",
+      "theta": "0.3"
+    },
+    {
+      "nf": "16",
+      "ar": "3",
+      "p": "6",
+      "theta": "0.2"
+    },
+    {
+      "nf": "16",
+      "ar": "3",
+      "p": "6",
+      "theta": "0.3"
+    },
+    {
+      "nf": "16",
+      "ar": "3",
+      "p": "10",
+      "theta": "0.2"
+    },
+    {
+      "nf": "16",
+      "ar": "3",
+      "p": "10",
+      "theta": "0.3"
+    },
+    {
+      "nf": "16",
+      "ar": "4",
+      "p": "6",
+      "theta": "0.2"
+    },
+    {
+      "nf": "16",
+      "ar": "4",
+      "p": "6",
+      "theta": "0.3"
+    },
+    {
+      "nf": "16",
+      "ar": "4",
+      "p": "10",
+      "theta": "0.2"
+    },
+    {
+      "nf": "16",
+      "ar": "4",
+      "p": "10",
+      "theta": "0.3"
+    }
+  ],
+  "replacements": [],
+  "reserve": "same NF, AR and p; first unused theta in 0.21,0.31,0.22,0.32",
+  "prior_physical_count": 55,
+  "models": [
+    "Pade",
+    "Fresnel"
+  ],
+  "methods": [
+    "B",
+    "C"
+  ],
+  "degree": 128,
+  "bits": 1024,
+  "scan_bits": 512,
+  "radius": "5",
+  "seconds": 90,
+  "memory_mib": 768,
+  "absolute": "1e-5",
+  "relative": "0.01",
+  "original_files": 1746,
+  "source_pins": {
+    "prepare.py": "ddafde8f60ccbdc64c8dcf303be5dcb50ed0bdf0f9afe6694f3540f49ebb70a7",
+    "run.py": "15063073ca20a1c89662353a651aabb51c9d5ab687a16d5e0df491ab28bbac2e",
+    "summarize.py": "60682b9dcd25ef65ef15e6c1ffd3991e6693f44bb637104c1ca36aa03cef80e4",
+    "original_sha256.json": "f4191a97fef334189240dc62c2732fb183a4727be2f6b6ce927170eac04ee2f1"
+  }
+}

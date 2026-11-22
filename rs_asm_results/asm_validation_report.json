@@ -1,0 +1,63 @@
+{
+  "status": "target_not_met",
+  "mode": "full",
+  "plan": {
+    "unique_fft_cases": 11,
+    "largest_grid_n": 3840,
+    "approx_array_memory_mib": 900.0,
+    "total_fft_grid_points": 43033600
+  },
+  "conditions": {
+    "nf": 10.0,
+    "theta_ap": 0.3,
+    "ar": 1,
+    "p": 12.0,
+    "a_eff": 10.0,
+    "z": 33.333333333333336,
+    "wavelength": 0.3,
+    "roi_radius": 5.0
+  },
+  "target_raw_complex_l2": 0.001,
+  "analytic_checks": {
+    "circular_axis_analytic_real": 0.25325696388445373,
+    "circular_axis_analytic_imag": 0.5998383371154987,
+    "circular_axis_abs_error": 8.857682206675018e-14,
+    "plane_wave_max_abs_error": 0.0,
+    "evanescent_mode_abs_decay": 0.27381246688689853
+  },
+  "finest_pitch_case": {
+    "study": "pitch",
+    "case": "dx_0.0375",
+    "pitch": 0.0375,
+    "n": 3840,
+    "base_width": 24.0,
+    "window_width": 144.0,
+    "pad_each_side": 60.0,
+    "sampling": "cell_average",
+    "raw_relative_complex_l2": 0.003720847221581843,
+    "phase_aligned_relative_complex_l2": 0.0037208433510404863,
+    "intensity_l1": 0.005114654842936268,
+    "weighted_phase_rms_raw_rad": 0.0018540036493284219,
+    "weighted_phase_rms_aligned_rad": 0.0018540039649711918,
+    "phase_offset_rad": -5.3669025391894e-06,
+    "aperture_area": 314.1592653589546,
+    "aperture_area_relative_error": -7.870812651728382e-14,
+    "cubic_vs_linear_roi_l2": 0.00047270848292702336,
+    "cubic_vs_exact_discrete_fourier_probe_l2": 3.2934023631890797e-06,
+    "linear_vs_exact_discrete_fourier_probe_l2": 0.00046182541254796206,
+    "spectral_probe_vs_rs_l2": 0.004980882327835214,
+    "change_from_previous_case_roi_l2": 0.0009735314329902961,
+    "raw_l2_change_from_previous_case": 0.0002764740840691046
+  },
+  "pitch_error_decreases_at_every_step": false,
+  "padding_final_step_roi_l2": 0.0053026265461375635,
+  "boundary_sampling_change_roi_l2": 0.013021358224539432,
+  "matched_padded_window_max_roi_l2_change": 0.0,
+  "notes": [
+    "Both fields omit the same forward carrier exp(ikz). No fitted amplitude is used.",
+    "The finite FFT span sets the period of the repeated aperture and the transfer-function frequency spacing. Window and padding sweeps probe those coupled effects; the matched-window control verifies that adding the same zeros before or during padding is equivalent.",
+    "Center versus cell-average sampling is a raster sensitivity check. The average method uses the exact rectangular pixel basis sinc and retains evanescent frequencies.",
+    "Exact evaluation of the discrete Fourier series at the probes isolates interpolation error for that sampled spectrum. Cubic versus linear provides an ROI-wide interpolation diagnostic.",
+    "The error target concerns scalar half-space propagation with a prescribed aperture field."
+  ]
+}

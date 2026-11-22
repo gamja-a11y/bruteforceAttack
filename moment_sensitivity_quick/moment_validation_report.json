@@ -1,0 +1,343 @@
+{
+  "quick": true,
+  "plan": {
+    "estimated_field_evaluations_upper": 213,
+    "estimated_point_pairs_upper": 58638336,
+    "estimated_batch_workspace_mib": 4.0
+  },
+  "audit": {
+    "sympy_taylor_coefficients": [
+      "(K + I)/K",
+      "(-K - 3*I/2)/K",
+      "(K*(-I*K + 9) + 15*I)/(8*K)"
+    ],
+    "circular_on_axis_analytic_checks_nf": [
+      0.1,
+      1.0,
+      10.0
+    ],
+    "legacy_field_comparison": [
+      {
+        "p": 1.0,
+        "rs_fresnel_scaled_m2_m4_relative_l2": [
+          2.746296263957346e-15,
+          2.792687981934119e-15,
+          4.755897763823964e-15,
+          7.694182338570252e-15
+        ],
+        "direct_E_abs_difference": 1.3010426069826053e-18,
+        "legacy_E_hat_abs_difference": 6.5052130349130266e-18,
+        "common_denominator_E_hat": 0.0028578892292518182
+      },
+      {
+        "p": 1.5,
+        "rs_fresnel_scaled_m2_m4_relative_l2": [
+          2.4552395101633814e-09,
+          2.4898249409824384e-09,
+          6.967504048594205e-09,
+          1.0738310659641644e-08
+        ],
+        "direct_E_abs_difference": 1.244320878973637e-11,
+        "legacy_E_hat_abs_difference": 1.2650679115377983e-11,
+        "common_denominator_E_hat": 0.004231800274291829
+      },
+      {
+        "p": 2.0,
+        "rs_fresnel_scaled_m2_m4_relative_l2": [
+          9.450133382607988e-15,
+          9.456874510709484e-15,
+          1.032277944389211e-14,
+          1.1649912690932917e-14
+        ],
+        "direct_E_abs_difference": 4.163336342344337e-17,
+        "legacy_E_hat_abs_difference": 3.903127820947816e-17,
+        "common_denominator_E_hat": 0.004427597757626931
+      },
+      {
+        "p": 3.0,
+        "rs_fresnel_scaled_m2_m4_relative_l2": [
+          2.6922009714254187e-08,
+          2.7458408522544007e-08,
+          6.914515273014635e-08,
+          8.95676910809051e-08
+        ],
+        "direct_E_abs_difference": 1.1068389347418384e-10,
+        "legacy_E_hat_abs_difference": 1.1024409683757508e-10,
+        "common_denominator_E_hat": 0.004218297429978908
+      },
+      {
+        "p": 4.0,
+        "rs_fresnel_scaled_m2_m4_relative_l2": [
+          2.2887746644369827e-07,
+          2.332310867809269e-07,
+          5.858654425734244e-07,
+          7.503139662319493e-07
+        ],
+        "direct_E_abs_difference": 2.0651217801787025e-10,
+        "legacy_E_hat_abs_difference": 1.8669728783782258e-10,
+        "common_denominator_E_hat": 0.003947473569594051
+      },
+      {
+        "p": 6.0,
+        "rs_fresnel_scaled_m2_m4_relative_l2": [
+          1.4479757310005856e-06,
+          1.4748012248749482e-06,
+          3.8116550115199125e-06,
+          5.003439499266844e-06
+        ],
+        "direct_E_abs_difference": 6.095575003951803e-10,
+        "legacy_E_hat_abs_difference": 7.877615508695979e-10,
+        "common_denominator_E_hat": 0.003565533387140381
+      },
+      {
+        "p": 8.0,
+        "rs_fresnel_scaled_m2_m4_relative_l2": [
+          3.093466096764912e-06,
+          3.150881924559559e-06,
+          8.442934837120073e-06,
+          1.1550509747970494e-05
+        ],
+        "direct_E_abs_difference": 1.8814534318532805e-09,
+        "legacy_E_hat_abs_difference": 1.49703374393087e-09,
+        "common_denominator_E_hat": 0.003343711364981576
+      },
+      {
+        "p": 12.0,
+        "rs_fresnel_scaled_m2_m4_relative_l2": [
+          5.359969483019459e-06,
+          5.460412129437704e-06,
+          1.553807076728489e-05,
+          2.29060368951769e-05
+        ],
+        "direct_E_abs_difference": 2.4085379935270823e-08,
+        "legacy_E_hat_abs_difference": 2.3619740013684776e-08,
+        "common_denominator_E_hat": 0.0031217783362854734
+      }
+    ],
+    "legacy_field_comparison_within_1e-6": false,
+    "legacy_denominator_difference": "Legacy E_hat divides by the predicted field norm; the primary E_hat here divides by the direct RS-I norm as specified.",
+    "diagnostic_source": "Reviewed meep_shape_diagnostic_v2.py; the requested (1) filename was absent.",
+    "meep_executed": false
+  },
+  "sweeps": {
+    "baseline": {
+      "samples": 5,
+      "max_area_abs_relative_error": 2.106836483051211e-09,
+      "max_magnitude_prediction_rel_error": 0.0031544695420586003,
+      "max_sensitivity_rel_error": 0.013240434577814876,
+      "max_sensitivity_abs_error": 5.4724286719558604e-05,
+      "fresnel_error_above_5_percent": 0,
+      "quartic_phase_above_pi_over_8": 0,
+      "prediction_failures": []
+    },
+    "nf": {
+      "NF=0.1": {
+        "samples": 5,
+        "max_area_abs_relative_error": 2.106836483051211e-09,
+        "max_magnitude_prediction_rel_error": 6.3181273099004845e-06,
+        "max_sensitivity_rel_error": 0.0003110517776777375,
+        "max_sensitivity_abs_error": 6.793337702266922e-10,
+        "fresnel_error_above_5_percent": 0,
+        "quartic_phase_above_pi_over_8": 0,
+        "prediction_failures": []
+      },
+      "NF=1": {
+        "samples": 5,
+        "max_area_abs_relative_error": 2.106836483051211e-09,
+        "max_magnitude_prediction_rel_error": 0.0031544695420586003,
+        "max_sensitivity_rel_error": 0.013240434577814876,
+        "max_sensitivity_abs_error": 5.4724286719558604e-05,
+        "fresnel_error_above_5_percent": 0,
+        "quartic_phase_above_pi_over_8": 0,
+        "prediction_failures": []
+      },
+      "NF=10": {
+        "samples": 5,
+        "max_area_abs_relative_error": 2.106836483051211e-09,
+        "max_magnitude_prediction_rel_error": 8.024950125198867,
+        "max_sensitivity_rel_error": 308.35341884870064,
+        "max_sensitivity_abs_error": 6.812503800663608,
+        "fresnel_error_above_5_percent": 5,
+        "quartic_phase_above_pi_over_8": 5,
+        "prediction_failures": [
+          {
+            "p": 1.0,
+            "nf": 10.0,
+            "ar": 1.0,
+            "E": 0.14681721135775594,
+            "E_hat": 0.8568493082723745,
+            "E_res": 0.8504239086899716,
+            "S_E": 0.09488253302895044,
+            "S_E_hat": 3.033286065269536,
+            "error_prediction_rel_error": 4.836163896237289,
+            "sensitivity_abs_error": 2.9384035322405855,
+            "sensitivity_rel_error": 30.968856315672173,
+            "q_max": 3.0741104641103973,
+            "max_exact_fresnel_phase_defect_rad": 32.585393716140494,
+            "reasons": [
+              "error magnitude discrepancy",
+              "sensitivity discrepancy"
+            ]
+          },
+          {
+            "p": 1.5,
+            "nf": 10.0,
+            "ar": 1.0,
+            "E": 0.20653650633814777,
+            "E_hat": 1.478745652437661,
+            "E_res": 1.5081453630391657,
+            "S_E": -0.022093167723255536,
+            "S_E_hat": -6.8345969683868635,
+            "error_prediction_rel_error": 6.1597301545161915,
+            "sensitivity_abs_error": 6.812503800663608,
+            "sensitivity_rel_error": 308.35341884870064,
+            "q_max": 2.4686637017051227,
+            "max_exact_fresnel_phase_defect_rad": 23.36697550212284,
+            "reasons": [
+              "error magnitude discrepancy",
+              "sensitivity discrepancy"
+            ]
+          },
+          {
+            "p": 2.0,
+            "nf": 10.0,
+            "ar": 1.0,
+            "E": 0.18998182503896502,
+            "E_hat": 1.7145764956709166,
+            "E_res": 1.7238819893763158,
+            "S_E": -0.00021332152769504287,
+            "S_E_hat": 0.014222590442147798,
+            "error_prediction_rel_error": 8.024950125198867,
+            "sensitivity_abs_error": 0.01443591196984284,
+            "sensitivity_rel_error": 67.67208225922667,
+            "q_max": 2.25,
+            "max_exact_fresnel_phase_defect_rad": 20.245953786176432,
+            "reasons": [
+              "error magnitude discrepancy",
+              "sensitivity discrepancy",
+              "opposite sensitivity sign"
+            ]
+          },
+          {
+            "p": 4.0,
+            "nf": 10.0,
+            "ar": 1.0,
+            "E": 0.19822293877172478,
+            "E_hat": 1.4894670967449886,
+            "E_res": 1.5396766396316186,
+            "S_E": -0.025201334924490615,
+            "S_E_hat": -0.42656404034990825,
+            "error_prediction_rel_error": 6.514100567645562,
+            "sensitivity_abs_error": 0.40136270542541763,
+            "sensitivity_rel_error": 15.926247820918963,
+            "q_max": 2.542736157775502,
+            "max_exact_fresnel_phase_defect_rad": 24.451161480080213,
+            "reasons": [
+              "error magnitude discrepancy",
+              "sensitivity discrepancy"
+            ]
+          },
+          {
+            "p": 12.0,
+            "nf": 10.0,
+            "ar": 1.0,
+            "E": 0.16288630011348068,
+            "E_hat": 1.1164461966651462,
+            "E_res": 1.1121046977762878,
+            "S_E": 0.00054135401454658,
+            "S_E_hat": -0.027010502681745763,
+            "error_prediction_rel_error": 5.854144245939242,
+            "sensitivity_abs_error": 0.027551856696292343,
+            "sensitivity_rel_error": 50.89434262230207,
+            "q_max": 2.85277237655492,
+            "max_exact_fresnel_phase_defect_rad": 29.124961651244607,
+            "reasons": [
+              "error magnitude discrepancy",
+              "sensitivity discrepancy",
+              "opposite sensitivity sign"
+            ]
+          }
+        ]
+      }
+    },
+    "ar": {
+      "AR=1": {
+        "samples": 5,
+        "max_area_abs_relative_error": 2.106836483051211e-09,
+        "max_magnitude_prediction_rel_error": 0.0031544695420586003,
+        "max_sensitivity_rel_error": 0.013240434577814876,
+        "max_sensitivity_abs_error": 5.4724286719558604e-05,
+        "fresnel_error_above_5_percent": 0,
+        "quartic_phase_above_pi_over_8": 0,
+        "prediction_failures": []
+      },
+      "AR=4": {
+        "samples": 5,
+        "max_area_abs_relative_error": 2.106836483051211e-09,
+        "max_magnitude_prediction_rel_error": 0.02962059182918522,
+        "max_sensitivity_rel_error": 0.1203592092640519,
+        "max_sensitivity_abs_error": 0.00014297873968075348,
+        "fresnel_error_above_5_percent": 0,
+        "quartic_phase_above_pi_over_8": 1,
+        "prediction_failures": [
+          {
+            "p": 1.0,
+            "nf": 1.0,
+            "ar": 4.0,
+            "E": 0.0015275714158332467,
+            "E_hat": 0.0015493128004674557,
+            "E_res": 0.00019686043179238763,
+            "S_E": 0.0011879335246136203,
+            "S_E_hat": 0.0013309122642943738,
+            "error_prediction_rel_error": 0.014232646938048236,
+            "sensitivity_abs_error": 0.00014297873968075348,
+            "sensitivity_rel_error": 0.1203592092640519,
+            "q_max": 0.09039813581810585,
+            "max_exact_fresnel_phase_defect_rad": 0.6143459520337964,
+            "reasons": [
+              "sensitivity discrepancy"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "study_thresholds": {
+    "magnitude_prediction_relative": 0.05,
+    "sensitivity_relative": 0.1,
+    "near_zero_slope": 1e-07,
+    "quartic_phase_indicator_rad": 0.39269908169872414,
+    "direct_fresnel_error_indicator": 0.05
+  },
+  "notes": [
+    "E, E_hat and E_res all use the direct RS-I denominator; E_hat_legacy is the RS-independent scalar prediction from the earlier normalization.",
+    "The circled samples in error plots exceed the quartic-phase or direct Fresnel-error indicator.",
+    "Phase alignment uses weighted complex overlap and rotates phase only.",
+    "A large omitted phase or q can explain Taylor limitations, but the phase indicator is a diagnostic and does not prove a cause for each discrepancy.",
+    "Convergence CSV varies aperture order, ROI order and h independently at the baseline and checks p=1.5 and p=12 at the largest selected NF and AR.",
+    "At p=1 and p=12 second-order one-sided derivatives respect the study interval."
+  ],
+  "convergence_max_change": {
+    "aperture_order": {
+      "E": 1.3150300114893841e-06,
+      "E_hat": 1.31932681535522e-06,
+      "E_res": 1.1627666802698617e-08,
+      "S_E": 1.6583546562885798e-07,
+      "S_E_hat": 1.682309974052748e-07
+    },
+    "finite_difference_step": {
+      "E": 0.0,
+      "E_hat": 0.0,
+      "E_res": 0.0,
+      "S_E": 3.4135190845052676e-06,
+      "S_E_hat": 3.6767281400441193e-06
+    },
+    "roi_order": {
+      "E": 3.168841673870798e-09,
+      "E_hat": 3.3473166378451824e-09,
+      "E_res": 6.662528664077953e-11,
+      "S_E": 1.2343510285076076e-08,
+      "S_E_hat": 1.31380472473408e-08
+    }
+  }
+}

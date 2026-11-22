@@ -1,0 +1,422 @@
+# Theorem 1 — Complete Mathematical-to-Code Certification Audit
+
+## 연구 목적
+
+현재 개발된 스펙트럴 모멘트 기반 알고리즘은 RS-I–Padé 및 RS-I–Standard Fresnel 복소 잔차에 대해 연속 관측영역의 L2 노름을 양측 구간으로 인증한다.
+
+이번 작업의 목적은 새로운 알고리즘 개발이 아니다.
+
+**Theorem 1의 각 수학적 가정, 증명 단계, 수치 오차 상한, Arb 구간연산 구현이 실제 Python 코드와 일대일로 대응하는지 전면 감사하는 것이다.**
+
+현재 결과가 옳다는 결론을 전제로 하지 말라.
+
+기존 코드와 모든 결과는 보존하고, 새로운 감사 디렉터리만 생성하라.
+
+## 검토 대상
+
+다음 파일과 관련 증명 및 인증서를 탐색하라.
+
+- fresnel_certified_bound_v6.py
+- fresnel_independent_audit.py
+- fresnel_standard_certification.py
+- certified_bound_v6_verified/proof.md
+- certified_bound_v6_verified/certificate.json
+- fresnel_independent_audit_verified/proof.md
+- fresnel_independent_audit_verified/audit_report.json
+- standard_fresnel_verified/standard_fresnel_proof.md
+- standard_fresnel_verified/standard_fresnel_certificate.json
+
+파일명이 다르거나 누락된 경우 실제 경로를 확인하고, 찾지 못한 자료는 명시하라.
+
+---
+
+# PART 1 — Theorem 1 검증
+
+다음 정리를 기준으로 감사한다.
+
+Let A and Ω be bounded measurable subsets of R² with finite positive area.
+
+Let
+
+q(r,s)=|r-s|²/z²
+
+and assume q(r,s) ∈ [0,Q] for all r ∈ Ω, s ∈ A.
+
+Let D(q) denote the complex residual kernel between the exact RS-I model and a specified approximation.
+
+Define
+
+E(r)=1/(i λ z) ∫_A D(q(r,s)) ds.
+
+The normalized error norm is
+
+N=||E||_{L²(Ω,dν)},
+
+where dν=dr/|Ω|.
+
+Let P_n(q) be the degree-n Chebyshev–Lobatto interpolant of D(q) on [0,Q].
+
+Assume D(Q(1+ξ)/2) is analytic in a neighborhood of a closed Bernstein ellipse E_ρ, ρ>1, and bounded there by M_ρ.
+
+Then
+
+ε_n ≤ 4 M_ρ ρ^(-n)/(ρ-1).
+
+Define
+
+E_n(r)=1/(i λ z) ∫_A P_n(q(r,s)) ds,
+
+G_n=||E_n||²,
+
+δ_n=|A| ε_n/(λ z).
+
+The theorem asserts:
+
+max(0,√G_n−δ_n) ≤ N ≤ √G_n+δ_n.
+
+If rigorous interval arithmetic gives
+
+G_n ∈ [G_n^-,G_n^+]
+
+and δ_n ≤ δ̂_n, then a certified enclosure is
+
+[max(0,√max(0,G_n^-)−δ̂_n), √G_n^+ + δ̂_n],
+
+with outward rounding.
+
+## 필수 검증
+
+1. 모든 수학적 가정이 충분한지 확인하라.
+2. 필요한 가정이 누락되어 있다면 반례와 함께 수정하라.
+3. Chebyshev–Lobatto interpolation error theorem의 정확한 형태와 적용 조건을 검증하라.
+4. 복소값 함수에도 동일한 오차 상수가 적용되는지 확인하라.
+5. 커널의 uniform error가 연속 L2 error로 전파되는 과정을 독립 증명하라.
+6. normalized measure로 인해 ROI 면적 계수가 어떻게 처리되는지 확인하라.
+7. 하한 및 상한 계산에서 interval arithmetic의 방향성이 올바른지 확인하라.
+8. 단위 조명 가정과 공통 반송파 제거의 영향을 검증하라.
+9. 일반 정리와 특정 초타원·원판 따름정리의 가정을 분리하라.
+
+정리에 결함이 발견되면 원래 정리를 무조건 유지하지 말고 올바른 형태로 수정하라.
+
+---
+
+# PART 2 — 인증 경로 전체 추적
+
+실제 실행되는 함수 호출을 추적하여 다음 단계 각각에 대한 수학적 증명 의무를 작성하라.
+
+## Stage A. Physical geometry
+
+- Superellipse aperture definition
+- Aperture area normalization
+- Aspect ratio definition
+- ROI geometry
+- Physical q maximum
+- Certified interpolation domain [0,Q]
+
+특히 q_max가 단순히 표본 관측점에서만 맞는 것이 아니라, 연속 개구와 연속 ROI 전체에 대해 유효한지 증명하라.
+
+AR=1과 AR≠1을 구분하라.
+
+## Stage B. Exact residual kernel
+
+- Exact RS-I scalar kernel
+- Padé approximation kernel
+- Standard Fresnel kernel
+- Complex amplitude factors
+- Phase factors
+- Common carrier
+- Normalization
+
+두 잔차 D_P(q), D_F(q)가 실제 수학적 정의와 정확히 일치하는지 검증하라.
+
+안정화된 residual expression이 원래 차이와 항등적으로 같음을 SymPy로 검사하라.
+
+특히 expm1을 사용한 식과 직접 차이식의 동등성을 검증하라.
+
+## Stage C. Complex analyticity
+
+- Principal square-root branch
+- Rational denominator zeros
+- Bernstein ellipse geometry
+- Complex rectangular enclosures
+- Complete ellipse boundary coverage
+
+각 코드의 분기절단 및 분모 검사만으로 해석성이 증명되는지 판단하라.
+
+실제 pole이 없더라도 interval dependency 때문에 검사가 실패할 수 있는 경우와, 잘못된 포함관계 때문에 검사가 통과할 수 있는 경우를 구별하라.
+
+## Stage D. Bernstein maximum and interpolation error
+
+- Maximum modulus bound M_ρ
+- Arb complex interval enclosure
+- Boundary arc covering
+- Chebyshev–Lobatto node definitions
+- Interpolation degree
+- Interpolation coefficient construction
+- Interpolation error constant
+
+특히 truncated Chebyshev series와 interpolating polynomial의 오차 정리를 혼동하지 않았는지 검증하라.
+
+검증된 M_ρ가 실제 타원 전체의 복소 커널 절댓값을 상계한다는 증명을 제공하라.
+
+## Stage E. Polynomial moment transform
+
+- q-polynomial expansion
+- Source monomial moments
+- Gamma/Beta coefficients
+- Binomial coefficients
+- Coordinate parity
+- Complex coefficient conversion
+- Scaling by z, Q and ROI radius
+
+초타원 개구에 대해
+
+μ_ij =
+4 ax^(2i+1) ay^(2j+1)
+Γ((2i+1)/p)Γ((2j+1)/p)
+/
+[p²Γ(1+(2i+2j+2)/p)]
+
+가 정확한지 검증하라.
+
+여기서 μ_ij는 s_x^(2i)s_y^(2j)의 적분이다.
+
+다항식 차수 1,2,3의 폐형식 테스트를 수행하고, 추가로 무작위 낮은 차수 다항식에 대해 독립적인 고정밀 적분 및 다른 전개 방법과 비교하라.
+
+## Stage F. Continuous ROI Gram norm
+
+정규화된 원판의 모멘트
+
+m_ij=(1/2)_i(1/2)_j/(i+j+1)!
+
+가 올바른지 검증하라.
+
+복소 다항식
+
+E_n(x,y)=Σ C_ij X^i Y^j
+
+의 정확한 제곱 노름
+
+G_n=Σ C_ij conj(C_kl) m_(i+k,j+l)
+
+을 독립적으로 계산하라.
+
+반드시 확인할 것:
+
+- Complex conjugation
+- Signed cross terms
+- Real/imaginary squares
+- Polynomial coefficient indexing
+- Kronecker embedding aliasing
+- Nonnegative exact Gram norm
+- Floating-point/Arb rounding enclosure
+
+음수 구간 하한을 0으로 잘라내는 경우와, 음수 구간 상한 때문에 인증을 중단해야 하는 경우를 명확히 구분하라.
+
+## Stage G. Final certified enclosure
+
+다음 각 항목의 실제 코드 변수명을 확인하라.
+
+- Polynomial L2 norm enclosure
+- Uniform kernel interpolation error
+- Field approximation error
+- Certified lower endpoint
+- Certified upper endpoint
+
+수학적 부등식과 코드의 각 연산이 정확히 대응하는지 확인하라.
+
+특히 하한 계산에서 불확실성을 과소평가하지 않았는지 조사하라.
+
+---
+
+# PART 3 — Mathematical-to-Code Traceability Matrix
+
+다음 열을 포함하는 표를 작성하라.
+
+1. Mathematical statement
+2. Mathematical assumption
+3. Equation / theorem reference
+4. Source filename
+5. Function name
+6. Exact source line range
+7. Verification test
+8. Verification result
+9. Certification status
+10. Failure consequence
+
+모든 핵심 정리의 가정과 증명 단계는 최소 하나의 구현 또는 검증 근거에 연결되어야 한다.
+
+단순히 proof.md에 "proven"이라고 적혀 있다는 이유만으로 검증 통과로 처리하지 말라.
+
+---
+
+# PART 4 — Independent Counterexample and Regression Tests
+
+다음 입력을 시험하라.
+
+1. q=0
+2. Very small positive q
+3. Maximum physical q
+4. q near interpolation domain endpoint
+5. Low polynomial degrees
+6. High polynomial degrees
+7. Small and large Fresnel numbers
+8. p=2 circular aperture
+9. p=12 superellipse
+10. p=16, AR=4
+11. Parameters near Bernstein analyticity restrictions
+12. Reduced Arb precision
+13. Deliberately insufficient interpolation degree
+14. Ill-conditioned polynomial coefficient conversion
+
+목표는 프로그램이 성공하는 경우만 확인하는 것이 아니라, 인증이 불가능한 경우 제대로 실패하는지도 확인하는 것이다.
+
+특히 각 검증 조건 하나를 의도적으로 위반하는 mutation tests를 작성하라.
+
+잘못된 전제가 주어졌을 때 프로그램이 유효한 certificate를 반환한다면 심각한 결함으로 기록하라.
+
+기존 코드를 수정하지 않고 별도 테스트 코드에서 검증하라.
+
+---
+
+# PART 5 — Numerical Certificate Reproduction
+
+기준 조건:
+
+p=12, NF=10, theta_ap=0.3, AR=1
+ROI radius=5
+degree=96
+Arb precision=768 bits
+
+기존 보고 결과:
+
+RS-I–Padé:
+[4.678280750503585e-6, 4.678280750533006e-6]
+
+RS-I–Standard Fresnel:
+[0.07356438911682356, 0.07356438911830926]
+
+새 구현의 Padé 구간은 다음과 같이 보고됨:
+
+[4.678280604901136e-6, 4.678280896135455e-6]
+
+검증할 것:
+
+1. 결과 구간의 재현성
+2. 두 Padé 인증 구간의 교집합 존재 여부
+3. Standard Fresnel 커널의 독립 검증
+4. 보간 차수 증가 시 인증 구간의 정합성
+5. Arb precision 증가 시 결과 포함성
+6. 실패 조건에서의 올바른 예외 처리
+
+정확한 숫자 일치를 강제하지 말라.
+
+독립적인 인증 구간이 서로 중첩되는지, 동일한 수학적 양을 인증하는지가 중요하다.
+
+---
+
+# PART 6 — Proof-Carrying Computational Certificate
+
+기존 certificate.json에는 최종 결과뿐 아니라 각 증명 의무의 검증 결과도 포함되도록 새로운 감사용 certificate를 설계하라.
+
+필수 정보:
+
+- Physical parameters
+- Code version/hash
+- Python and dependency versions
+- Arb precision
+- Certified q domain
+- Bernstein ellipse parameter
+- Analyticity test results
+- Certified maximum modulus bound
+- Interpolation degree
+- Uniform interpolation error
+- Source moment verification status
+- Gram norm enclosure
+- Final lower/upper enclosure
+- Outward rounding verification
+- Proof obligation checklist
+- Overall certification status
+- Exact reproduction command
+
+최종 결과만 기록하는 JSON이 아니라, 각 단계가 어떤 근거에 의해 통과했는지 추적 가능한 구조여야 한다.
+
+단순한 boolean 값을 적는 것으로 증명 의무를 대체하지 말라. 가능한 경우 검증 가능한 수학식, 입력 구간, 출력 구간 및 테스트 결과를 함께 보존하라.
+
+---
+
+# PART 7 — Formal Theorem and Proof Manuscript
+
+검증이 끝나면 논문에 삽입할 수 있는 영어 LaTeX 수학 원고를 작성하라.
+
+구성:
+
+- Definitions and notation
+- Lemma 1: Uniform Spectral Interpolation Error
+- Lemma 2: Exact Moment Representation
+- Theorem 1: Certified Continuous-Domain L2 Error Bounds
+- Corollary 1: Superelliptical Apertures
+- Proposition 1: Validated Interval-Arithmetic Certificate
+- Corollary 2: Geometric Convergence
+- Proof details
+- Assumptions and limitations
+
+정리 자체의 새로움과 고전적 부등식의 재사용을 정확히 구분하라.
+
+기존 정리를 새로운 발견인 것처럼 주장하지 말라.
+
+---
+
+# PART 8 — Required Deliverables
+
+기존 모든 소스와 결과를 보존한다.
+
+새 출력 디렉터리:
+
+theorem1_certification_audit/
+
+다음 파일을 생성하라.
+
+1. theorem1_final.tex
+2. theorem1_proof_audit.md
+3. mathematical_to_code_matrix.csv
+4. proof_obligations.json
+5. independent_counterexample_tests.py
+6. mutation_test_results.csv
+7. interval_enclosure_tests.csv
+8. certification_reproduction.json
+9. final_certificate.json
+10. overall_audit_summary.md
+
+모든 파일의 재현 명령도 제공하라.
+
+## 최종 판정 기준
+
+다음 중 하나로 판정하라.
+
+PASS:
+모든 필수 수학적 가정 및 인증 경로가 검증됨.
+
+CONDITIONAL PASS:
+핵심 수학적 정리는 검증되었지만 구현 또는 재현성에 제한이 남음.
+
+FAIL:
+수학적 증명 또는 수치 인증 경로에서 반례·오류가 발견됨.
+
+UNVERIFIED:
+필요한 근거나 실행 환경이 없어 최종 판정을 내릴 수 없음.
+
+검증하지 못한 항목을 PASS로 처리하지 말라.
+
+수학적 정리 자체의 타당성과 실제 프로그램의 인증 무결성을 별도로 판정하라.
+
+**현재 인증 결과가 옳다는 것을 증명하는 게 목표가 아니다. 잘못된 결과가 인증값으로 통과할 수 없다는 것을 검증하는 것이 목표다.**
+
+완료 후 반드시 한국어로 다음 내용을 요약하라.
+
+- Theorem 1의 수학적 검증 결과
+- 구현에서 발견된 오류
+- 인증 경로의 완결성
+- 남아 있는 증명 의무
+- 논문에 그대로 사용할 수 있는 주장
+- 논문 제출 전에 수정해야 할 사항

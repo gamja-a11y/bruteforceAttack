@@ -1,0 +1,32 @@
+﻿test,expected,observed,passed
+T1 normal complete run,verified,verified,True
+T2 empty success,no_candidates,no_candidates,True
+T3,candidate_inputs,candidate_inputs,True
+T4p,candidate_inputs,candidate_inputs,True
+T4nf,candidate_inputs,candidate_inputs,True
+T4ar,candidate_inputs,candidate_inputs,True
+T4theta,candidate_inputs,candidate_inputs,True
+T5n,candidate_inputs,candidate_inputs,True
+T5b,candidate_inputs,candidate_inputs,True
+T6 saved flag changed,saved_verification_mismatch,saved_verification_mismatch,True
+T7 bad JSON,malformed_json,malformed_json,True
+T7 missing proof despite verified=True,independent_verification_failure,independent_verification_failure,True
+T8 forged success,run_target_flag,run_target_flag,True
+T9 inward endpoint,independent_verification_failure,independent_verification_failure,True
+T10 matching receipt,verified,verified,True
+T10 manifest_sha256,resume_policy,resume_policy,True
+T10 params,resume_policy,resume_policy,True
+T10 rule_sha256,resume_policy,resume_policy,True
+T10 budget,resume_policy,resume_policy,True
+T10 issuer,resume_policy,resume_policy,True
+T10 verifier,resume_policy,resume_policy,True
+T11 nonzero_exit_without_stderr,nonzero_exit_without_stderr,nonzero_exit_without_stderr,True
+T11 nonzero_exit_with_stderr,nonzero_exit_with_stderr,nonzero_exit_with_stderr,True
+T11 malformed_worker_output,malformed_worker_output,malformed_worker_output,True
+T11 certificate_integrity_failure,certificate_integrity_failure,certificate_integrity_failure,True
+T11 timeout,timeout,timeout,True
+T12 stable Gram width,positive_enclosed,positive_enclosed,True
+T13 disjoint,disjoint_intervals,disjoint_intervals,True
+T14 missing,missing_certificate,missing_certificate,True
+T14 duplicate,duplicate_candidate,duplicate_candidate,True
+T15 unregistered,unreferenced_file,unreferenced_file,True

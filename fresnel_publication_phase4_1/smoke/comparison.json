@@ -1,0 +1,12 @@
+{
+  "B": {
+    "rho": "2",
+    "reference_overlap": true,
+    "identical": true
+  },
+  "C": {
+    "rho": "3",
+    "reference_overlap": true,
+    "identical": true
+  }
+}

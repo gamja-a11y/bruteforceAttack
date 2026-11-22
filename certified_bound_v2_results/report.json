@@ -1,0 +1,137 @@
+{
+  "proof": {
+    "symbolic_identities_verified": true,
+    "range": "All real q >= 0 and K > 0, with t=sqrt(1+q)>=1; no upper restriction on q.",
+    "polynomial_coefficients_descending_in_t_minus_1": {
+      "positive_amplitude_denominator": [
+        35,
+        245,
+        749,
+        1295,
+        1364,
+        872,
+        312,
+        48
+      ],
+      "phase_inequality": [
+        1,
+        14,
+        96,
+        424,
+        1296,
+        2752,
+        3968,
+        3712,
+        2048,
+        0
+      ],
+      "amplitude_inequality": [
+        245,
+        4165,
+        32193,
+        149695,
+        466718,
+        1028664,
+        1644664,
+        1923152,
+        1632960,
+        982016,
+        395392,
+        86016,
+        0
+      ]
+    },
+    "kernel": "Write Delta F=e^(iK phi_PP)[A-A_PP+A(expm1(iK Delta phi))]. Use |expm1(iu)|<=|u| for real u and |A|<=sqrt(1+1/K^2).",
+    "field_bounds": "Triangle inequality pointwise in the area integral for B0 and in the fixed-AR boundary transport integral for B1; then use monotonicity of the ROI L2 norm.",
+    "prediction_bounds": "Reverse triangle inequality gives |D-D_tilde|<=B0. Also |N-||U_PP||||<=B0, so if B0<||U_PP|| then N>=||U_PP||-B0>0, yielding the practical common-factor bound.",
+    "sensitivity_bound": "In the real inner product Re<.,.>, derivative of ||X|| is Re<X/||X||,X'> at nonzero X. For X=U_RS-U_F and Y=U_PP-U_F, ||X/||X||-Y/||Y||||<=2||X-Y||/min(||X||,||Y||) by the triangle and reverse triangle inequalities. Hence |D'-D_tilde'|<=B1+2B0||Y'||/min(D,D_tilde). The quotient rule and |N'|<=||U_RS'|| give the proposed BS. Requires differentiable fields and N,D,D_tilde>0."
+  },
+  "flint": "0.9.0",
+  "elapsed": 4.557658900000206,
+  "continuous_geometry_B0_ball": "[0.00060807628269490014576758402504726903444 +/- 1.43e-42]",
+  "rho3_ball": "[1.5913325612871314504295932629145666465e-11 +/- 1.73e-49]",
+  "phase_preserving_continuous_status": "unverified",
+  "matched_accuracy_wall_clock_status": "unverified: distinct tasks; no speedup inferred",
+  "empirical_reference": 4.678284775e-06,
+  "records": [
+    {
+      "test": "continuous_geometry",
+      "bits": 64,
+      "B0": "[0.000608076282694900154 +/- 3.41e-22]",
+      "rho": "[1.59133256128713199e-11 +/- 2.57e-29]",
+      "seconds": 0.009853499999962878,
+      "status": "interval-certified"
+    },
+    {
+      "test": "continuous_geometry",
+      "bits": 128,
+      "B0": "[0.00060807628269490014576758402504726903491 +/- 3.66e-42]",
+      "rho": "[1.5913325612871314504295932629145666706e-11 +/- 1.83e-50]",
+      "seconds": 0.01066850000006525,
+      "status": "interval-certified"
+    },
+    {
+      "test": "continuous_geometry",
+      "bits": 192,
+      "B0": "[0.000608076282694900145767584025047269034440205959860019343558 +/- 1.97e-61]",
+      "rho": "[1.59133256128713145042959326291456664648202925298226428305e-11 +/- 2.75e-68]",
+      "seconds": 0.014659199999869088,
+      "status": "interval-certified"
+    },
+    {
+      "test": "boundary_probe_3_4",
+      "degree": 8,
+      "panels": 8,
+      "bits": 192,
+      "reason": "kernel pole enclosure",
+      "status": "unverified",
+      "seconds": 0.3175223000000642
+    },
+    {
+      "test": "boundary_probe_3_4",
+      "degree": 12,
+      "panels": 8,
+      "bits": 192,
+      "reason": "kernel pole enclosure",
+      "status": "unverified",
+      "seconds": 0.8072944999998981
+    },
+    {
+      "test": "boundary_probe_3_4",
+      "degree": 12,
+      "panels": 12,
+      "bits": 192,
+      "reason": "kernel pole enclosure",
+      "status": "unverified",
+      "seconds": 2.203911699999935
+    },
+    {
+      "test": "v1_ROI_regression",
+      "roi": 2,
+      "B0": "[6.8000277595359128530615356898461892007 +/- 2.37e-38]",
+      "error_display": 4.740743760379024,
+      "seconds": 0.06026959999985593,
+      "status": "empirical",
+      "reason": "Inherited enclosure; not reissued as a v2 certificate"
+    },
+    {
+      "test": "v1_ROI_regression",
+      "roi": 4,
+      "B0": "[1.8788773895075788700469984566864730151 +/- 1.75e-38]",
+      "error_display": 1.31526054782817,
+      "seconds": 0.14512869999998657,
+      "status": "empirical",
+      "reason": "Inherited enclosure; not reissued as a v2 certificate"
+    },
+    {
+      "test": "v1_ROI_regression",
+      "roi": 8,
+      "B0": "[0.79819912236563401836005986728611556940 +/- 2.03e-39]",
+      "error_display": 0.5721535491547253,
+      "seconds": 0.43504589999997734,
+      "status": "empirical",
+      "reason": "Inherited enclosure; not reissued as a v2 certificate"
+    }
+  ],
+  "reproduce": "python fresnel_certified_bound_v2.py --out NEW_DIRECTORY"
+}

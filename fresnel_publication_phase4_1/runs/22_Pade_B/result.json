@@ -1,0 +1,28 @@
+{
+  "params": {
+    "nf": "16",
+    "ar": "4",
+    "p": "6",
+    "theta": "0.3",
+    "radius": "5",
+    "model": "Pade"
+  },
+  "method": "B",
+  "n": 128,
+  "bits": 1024,
+  "manifest": "76642499b2d9a289c2fd246eab1429e038b5a52c1a9cf1b0a8851ca0d3696338",
+  "wall_s": 20.499322780000057,
+  "peak_mib": 157.88671875,
+  "verified": true,
+  "target_met": false,
+  "rho": "2",
+  "M": "3.95135660917572137465090E+40",
+  "epsilon": "464.479737217036981233127",
+  "delta": "23347.2980829177768813569",
+  "lower": "0",
+  "upper": "23347.2982462835365770277",
+  "width": "23347.2982462835365770277",
+  "relative": "2",
+  "reason": "target_width_unmet",
+  "certificate_sha256": "1ac645f13bb5e1bb2ebe0c817b80d94839b19ec3b58f202cbdf52e3d164331a8"
+}

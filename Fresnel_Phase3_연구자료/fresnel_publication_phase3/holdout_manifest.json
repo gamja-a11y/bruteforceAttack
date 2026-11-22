@@ -1,0 +1,227 @@
+{
+  "order": [
+    "p",
+    "nf",
+    "ar",
+    "theta"
+  ],
+  "cases": [
+    [
+      "4",
+      "1",
+      "1",
+      "0.1"
+    ],
+    [
+      "4",
+      "1",
+      "1",
+      "0.3"
+    ],
+    [
+      "4",
+      "1",
+      "4",
+      "0.1"
+    ],
+    [
+      "4",
+      "1",
+      "4",
+      "0.3"
+    ],
+    [
+      "4",
+      "3",
+      "1",
+      "0.1"
+    ],
+    [
+      "4",
+      "3",
+      "1",
+      "0.3"
+    ],
+    [
+      "4",
+      "3",
+      "4",
+      "0.1"
+    ],
+    [
+      "4",
+      "3",
+      "4",
+      "0.3"
+    ],
+    [
+      "4",
+      "10",
+      "1",
+      "0.1"
+    ],
+    [
+      "4",
+      "10",
+      "1",
+      "0.3"
+    ],
+    [
+      "4",
+      "10",
+      "4",
+      "0.1"
+    ],
+    [
+      "4",
+      "10",
+      "4",
+      "0.3"
+    ],
+    [
+      "10",
+      "1",
+      "1",
+      "0.1"
+    ],
+    [
+      "10",
+      "1",
+      "1",
+      "0.3"
+    ],
+    [
+      "10",
+      "1",
+      "4",
+      "0.1"
+    ],
+    [
+      "10",
+      "1",
+      "4",
+      "0.3"
+    ],
+    [
+      "10",
+      "3",
+      "1",
+      "0.1"
+    ],
+    [
+      "10",
+      "3",
+      "1",
+      "0.3"
+    ],
+    [
+      "10",
+      "3",
+      "4",
+      "0.1"
+    ],
+    [
+      "10",
+      "3",
+      "4",
+      "0.3"
+    ],
+    [
+      "10",
+      "10",
+      "1",
+      "0.1"
+    ],
+    [
+      "10",
+      "10",
+      "1",
+      "0.3"
+    ],
+    [
+      "10",
+      "10",
+      "4",
+      "0.1"
+    ],
+    [
+      "10",
+      "10",
+      "4",
+      "0.3"
+    ]
+  ],
+  "excluded": [
+    [
+      "2",
+      "1",
+      "1",
+      "0.1"
+    ],
+    [
+      "8",
+      "1",
+      "1",
+      "0.1"
+    ],
+    [
+      "16",
+      "1",
+      "1",
+      "0.1"
+    ],
+    [
+      "8",
+      "3",
+      "2",
+      "0.3"
+    ],
+    [
+      "2",
+      "10",
+      "1",
+      "0.1"
+    ],
+    [
+      "16",
+      "10",
+      "4",
+      "0.3"
+    ]
+  ],
+  "models": [
+    "Pade",
+    "Fresnel"
+  ],
+  "radius": "5",
+  "degrees": [
+    16,
+    24,
+    32,
+    48,
+    64
+  ],
+  "bits": [
+    256,
+    512
+  ],
+  "relative": "0.01",
+  "absolute": "0.00001",
+  "seconds_per_method": 30,
+  "process_mib": 512,
+  "fixed": [
+    64,
+    512
+  ],
+  "method_order": "ABC cyclic by case/model index, serial cold workers, one repeat",
+  "selection": "complete crossed design, two new p levels, NF1/3/10 and AR1/4 including joint stress corners; matched original pilot budget",
+  "sha256": {
+    "fresnel_publication_phase3\\frozen_selection_rule.py": "7b12f9921d35becdf403b71afd46d5d983c063f3a73109a3d461a81ebee5befe",
+    "fresnel_publication_phase2\\adaptive_certification.py": "45895413f0cb05f75477074338010d9ea53162332062e5093ec8a204f81db564",
+    "fresnel_publication_phase2\\adaptive_results.csv": "395e5f3894869e662a273d6e114193f8d093ae2baa463e36f6de7305ba286a6d",
+    "fresnel_publication_phase2\\experiment_manifest.json": "6b37e850fc3bb2a6d366e31cc83f38cdf135843fbefaf1c6895c195ecf07ef1a",
+    "fresnel_publication_phase2\\frozen\\repaired_certification.py": "954f078c856ef6ec6c15a0a1a383714ae4ad025250c5ecbf64904e6f6a75e8db",
+    "fresnel_publication_phase2\\frozen\\repaired_independent_verification.py": "219f26d04908572d87c9524264e9ae6aa51dee5d51a342618f040552e8d9227a",
+    "fresnel_publication_phase3\\experiment.py": "9247a6e86c89b22be1ee5045cf383b8c2cd0316de9ba7d3e03c62f610f9b4707"
+  }
+}

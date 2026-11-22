@@ -1,0 +1,193 @@
+{
+  "cases": [
+    {
+      "p": "6",
+      "nf": "3",
+      "ar": "1",
+      "theta": "0.1"
+    },
+    {
+      "p": "6",
+      "nf": "3",
+      "ar": "1",
+      "theta": "0.25"
+    },
+    {
+      "p": "6",
+      "nf": "3",
+      "ar": "3",
+      "theta": "0.1"
+    },
+    {
+      "p": "6",
+      "nf": "3",
+      "ar": "3",
+      "theta": "0.25"
+    },
+    {
+      "p": "6",
+      "nf": "10",
+      "ar": "1",
+      "theta": "0.1"
+    },
+    {
+      "p": "6",
+      "nf": "10",
+      "ar": "1",
+      "theta": "0.25"
+    },
+    {
+      "p": "6",
+      "nf": "10",
+      "ar": "3",
+      "theta": "0.1"
+    },
+    {
+      "p": "6",
+      "nf": "10",
+      "ar": "3",
+      "theta": "0.25"
+    },
+    {
+      "p": "6",
+      "nf": "14",
+      "ar": "1",
+      "theta": "0.1"
+    },
+    {
+      "p": "6",
+      "nf": "14",
+      "ar": "1",
+      "theta": "0.25"
+    },
+    {
+      "p": "6",
+      "nf": "14",
+      "ar": "3",
+      "theta": "0.1"
+    },
+    {
+      "p": "6",
+      "nf": "14",
+      "ar": "3",
+      "theta": "0.25"
+    },
+    {
+      "p": "14",
+      "nf": "3",
+      "ar": "1",
+      "theta": "0.1"
+    },
+    {
+      "p": "14",
+      "nf": "3",
+      "ar": "1",
+      "theta": "0.25"
+    },
+    {
+      "p": "14",
+      "nf": "3",
+      "ar": "3",
+      "theta": "0.1"
+    },
+    {
+      "p": "14",
+      "nf": "3",
+      "ar": "3",
+      "theta": "0.25"
+    },
+    {
+      "p": "14",
+      "nf": "10",
+      "ar": "1",
+      "theta": "0.1"
+    },
+    {
+      "p": "14",
+      "nf": "10",
+      "ar": "1",
+      "theta": "0.25"
+    },
+    {
+      "p": "14",
+      "nf": "10",
+      "ar": "3",
+      "theta": "0.1"
+    },
+    {
+      "p": "14",
+      "nf": "10",
+      "ar": "3",
+      "theta": "0.25"
+    },
+    {
+      "p": "14",
+      "nf": "14",
+      "ar": "1",
+      "theta": "0.1"
+    },
+    {
+      "p": "14",
+      "nf": "14",
+      "ar": "1",
+      "theta": "0.25"
+    },
+    {
+      "p": "14",
+      "nf": "14",
+      "ar": "3",
+      "theta": "0.1"
+    },
+    {
+      "p": "14",
+      "nf": "14",
+      "ar": "3",
+      "theta": "0.25"
+    }
+  ],
+  "models": [
+    "Pade",
+    "Fresnel"
+  ],
+  "design": "two new p levels crossed with three NF levels, two AR and theta levels; 16/24 geometries have NF>=10; controlled coordinate pairs",
+  "excluded_count": 30,
+  "radius": "5",
+  "seconds": 90,
+  "process_mib": 768,
+  "concurrent": 4,
+  "order": "Pade then Fresnel; rotate A,B,C by (2*case+model_index)%3; four concurrent cold workers; repeats alone",
+  "goals": [
+    "absolute<=1e-5",
+    "L>0 and symmetric relative<=.01"
+  ],
+  "A": "original Phase 3 policy, <=64/512, same new math backend, 90s; original 30s historical data separate",
+  "B": "same higher degree scheduler as C, fixed rho 2",
+  "C": "finite rho scan, then joint degree/precision scheduler",
+  "rhos": [
+    "1.1",
+    "1.2",
+    "1.3",
+    "1.5",
+    "1.75",
+    "2",
+    "2.5",
+    "3"
+  ],
+  "degrees": [
+    64,
+    80,
+    96,
+    128
+  ],
+  "bits": [
+    512,
+    768,
+    1024
+  ],
+  "stop": "first verified certificate meeting both goals, end of policy, deadline or error; retain every attempt",
+  "analysis": "all 48 denominators per method; pair times on common successes; label >100x both tolerances; repeats excluded from denominators",
+  "repeated": "smallest numbered Fresnel case with all methods successful; five interleaved repetitions per method",
+  "cpu": "AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]"
+}

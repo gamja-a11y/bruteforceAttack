@@ -1,0 +1,53 @@
+{
+  "p": "4",
+  "nf": "10",
+  "ar": "1",
+  "theta": "0.1",
+  "radius": "5",
+  "model": "Fresnel",
+  "target_relative_width": "0.01",
+  "target_absolute_width": "0.00001",
+  "maximum_degree": 64,
+  "maximum_bits": 512,
+  "timeout_seconds": 30,
+  "status": "verified_target_unmet",
+  "reason": "candidate limits exhausted",
+  "seconds": 2.3429386999996495,
+  "peak_worker_mib": 47.56640625,
+  "best": {
+    "degree": 64,
+    "bits": 512,
+    "issue_s": 0.8053027999994811,
+    "verify_s": 1.3727679000003263,
+    "peak_worker_mib": 47.56640625,
+    "status": "verified",
+    "reason": "",
+    "seconds": 2.3417451999994228,
+    "lower": "0.01446279061277579138896",
+    "upper": "0.01457960576223968296544",
+    "absolute_width": "0.0001168151494638915764734",
+    "relative_width": "0.008044456659532754213829",
+    "relative_met": true,
+    "absolute_met": false,
+    "certificate": "n64_b512.json"
+  },
+  "attempts": [
+    {
+      "degree": 64,
+      "bits": 512,
+      "issue_s": 0.8053027999994811,
+      "verify_s": 1.3727679000003263,
+      "peak_worker_mib": 47.56640625,
+      "status": "verified",
+      "reason": "",
+      "seconds": 2.3417451999994228,
+      "lower": "0.01446279061277579138896",
+      "upper": "0.01457960576223968296544",
+      "absolute_width": "0.0001168151494638915764734",
+      "relative_width": "0.008044456659532754213829",
+      "relative_met": true,
+      "absolute_met": false,
+      "certificate": "n64_b512.json"
+    }
+  ]
+}

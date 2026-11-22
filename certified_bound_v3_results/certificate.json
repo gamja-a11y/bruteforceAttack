@@ -1,0 +1,202 @@
+{
+  "backend": "0.9.0",
+  "proof": {
+    "symbolic_identities_verified": true,
+    "range": "All real q >= 0 and K > 0, with t=sqrt(1+q)>=1; no upper restriction on q.",
+    "polynomial_coefficients_descending_in_t_minus_1": {
+      "positive_amplitude_denominator": [
+        35,
+        245,
+        749,
+        1295,
+        1364,
+        872,
+        312,
+        48
+      ],
+      "phase_inequality": [
+        1,
+        14,
+        96,
+        424,
+        1296,
+        2752,
+        3968,
+        3712,
+        2048,
+        0
+      ],
+      "amplitude_inequality": [
+        245,
+        4165,
+        32193,
+        149695,
+        466718,
+        1028664,
+        1644664,
+        1923152,
+        1632960,
+        982016,
+        395392,
+        86016,
+        0
+      ]
+    },
+    "kernel": "Write Delta F=e^(iK phi_PP)[A-A_PP+A(expm1(iK Delta phi))]. Use |expm1(iu)|<=|u| for real u and |A|<=sqrt(1+1/K^2).",
+    "field_bounds": "Triangle inequality pointwise in the area integral for B0 and in the fixed-AR boundary transport integral for B1; then use monotonicity of the ROI L2 norm.",
+    "prediction_bounds": "Reverse triangle inequality gives |D-D_tilde|<=B0. Also |N-||U_PP||||<=B0, so if B0<||U_PP|| then N>=||U_PP||-B0>0, yielding the practical common-factor bound.",
+    "sensitivity_bound": "In the real inner product Re<.,.>, derivative of ||X|| is Re<X/||X||,X'> at nonzero X. For X=U_RS-U_F and Y=U_PP-U_F, ||X/||X||-Y/||Y||||<=2||X-Y||/min(||X||,||Y||) by the triangle and reverse triangle inequalities. Hence |D'-D_tilde'|<=B1+2B0||Y'||/min(D,D_tilde). The quotient rule and |N'|<=||U_RS'|| give the proposed BS. Requires differentiable fields and N,D,D_tilde>0."
+  },
+  "continuous_geometry": [
+    {
+      "bits": 64,
+      "v2": "[0.000608076282694900154 +/- 2.43e-22]",
+      "v3": "[0.000504232411187949603 +/- 1.58e-22]",
+      "v3_display": 0.0005042324111879496,
+      "seconds": 0.010012700000061159,
+      "status": "interval-certified"
+    },
+    {
+      "bits": 128,
+      "v2": "[0.00060807628269490014576758402504726903490 +/- 2.27e-42]",
+      "v3": "[0.00050423241118794959262760637142125952007 +/- 4.65e-42]",
+      "v3_display": 0.0005042324111879495,
+      "seconds": 0.011391499999945154,
+      "status": "interval-certified"
+    },
+    {
+      "bits": 192,
+      "v2": "[0.000608076282694900145767584025047269034440205959860019343557 +/- 3.37e-61]",
+      "v3": "[0.000504232411187949592627606371421259519470754809648689035374 +/- 4.36e-61]",
+      "v3_display": 0.0005042324111879495,
+      "seconds": 0.015775300000086645,
+      "status": "interval-certified"
+    },
+    {
+      "bits": 256,
+      "v2": "[0.0006080762826949001457675840250472690344402059598600193435334668320207625300430 +/- 4.77e-80]",
+      "v3": "[0.0005042324111879495926276063714212595194707548096486890353435722636157808480752 +/- 3.58e-80]",
+      "v3_display": 0.0005042324111879495,
+      "seconds": 0.01725710000005165,
+      "status": "interval-certified"
+    }
+  ],
+  "boundary": [
+    {
+      "method": "NC",
+      "degree_or_nodes": 12,
+      "panels": 16,
+      "real_half_width": 0.03125,
+      "M_sum_over_panels_and_sectors": "[3195842007865930891.0871919958216449705 +/- 8.97e-20]",
+      "S": "[7.5317366443080728795014509300223585938 +/- 5.96e-38]",
+      "exact_degree": 12,
+      "interval_error": "[22185042770879.822691678587789420047260 +/- 2.53e-25]",
+      "error_display": 22185042770879.824,
+      "real_enclosure": null,
+      "imag_enclosure": null,
+      "status": "interval-certified",
+      "scope": "remainder only",
+      "seconds": 0.0258237000000463
+    },
+    {
+      "method": "NC",
+      "degree_or_nodes": 12,
+      "panels": 24,
+      "real_half_width": 0.020833333333333332,
+      "M_sum_over_panels_and_sectors": "[277975907.1838991900867891191292258850 +/- 2.87e-29]",
+      "S": "[7.5317366443080728795014509300223585938 +/- 5.96e-38]",
+      "exact_degree": 12,
+      "interval_error": "[857.62929525584314081331568743733005368 +/- 4.36e-36]",
+      "error_display": 857.6292952558431,
+      "real_enclosure": null,
+      "imag_enclosure": null,
+      "status": "interval-certified",
+      "scope": "remainder only",
+      "seconds": 0.05141300000013871
+    },
+    {
+      "method": "NC",
+      "degree_or_nodes": 16,
+      "panels": 24,
+      "real_half_width": 0.020833333333333332,
+      "M_sum_over_panels_and_sectors": "[277975907.1838991900867891191292258850 +/- 2.87e-29]",
+      "S": "[58.457380918883232401232193741790172955 +/- 2.88e-37]",
+      "exact_degree": 16,
+      "interval_error": "[2603.2524852453062970453166129721993242 +/- 9.83e-36]",
+      "error_display": 2603.252485245306,
+      "real_enclosure": null,
+      "imag_enclosure": null,
+      "status": "interval-certified",
+      "scope": "remainder only",
+      "seconds": 0.05930430000012166
+    },
+    {
+      "method": "GL",
+      "degree_or_nodes": 8,
+      "panels": 16,
+      "real_half_width": 0.03125,
+      "M_sum_over_panels_and_sectors": "[3195842007865930891.0871919958216449705 +/- 8.97e-20]",
+      "S": "1.0000000000000000000000000000000000000",
+      "exact_degree": 15,
+      "interval_error": "[152389622109.69595389781913737400269369 +/- 4.25e-27]",
+      "error_display": 152389622109.69595,
+      "real_enclosure": "[+/- 1.53e+11]",
+      "imag_enclosure": "[+/- 1.53e+11]",
+      "status": "interval-certified",
+      "scope": "pointwise field",
+      "seconds": 1.1376279999999497
+    },
+    {
+      "method": "GL",
+      "degree_or_nodes": 8,
+      "panels": 24,
+      "real_half_width": 0.020833333333333332,
+      "M_sum_over_panels_and_sectors": "[277975907.1838991900867891191292258850 +/- 2.87e-29]",
+      "S": "1.0000000000000000000000000000000000000",
+      "exact_degree": 15,
+      "interval_error": "[5.8910774058002724136095919954347798036 +/- 4.52e-38]",
+      "error_display": 5.891077405800273,
+      "real_enclosure": "[+/- 5.90]",
+      "imag_enclosure": "[+/- 5.90]",
+      "status": "interval-certified",
+      "scope": "pointwise field",
+      "seconds": 2.709301099999948
+    },
+    {
+      "method": "GL",
+      "degree_or_nodes": 12,
+      "panels": 24,
+      "real_half_width": 0.020833333333333332,
+      "M_sum_over_panels_and_sectors": "[277975907.1838991900867891191292258850 +/- 2.87e-29]",
+      "S": "1.0000000000000000000000000000000000000",
+      "exact_degree": 23,
+      "interval_error": "[0.023012021116407314115662468732167108608 +/- 3.64e-40]",
+      "error_display": 0.023012021116407315,
+      "real_enclosure": "[+/- 0.0231]",
+      "imag_enclosure": "[+/- 0.0231]",
+      "status": "interval-certified",
+      "scope": "pointwise field",
+      "seconds": 6.234132600000066
+    },
+    {
+      "method": "GL",
+      "degree_or_nodes": 16,
+      "panels": 24,
+      "real_half_width": 0.020833333333333332,
+      "M_sum_over_panels_and_sectors": "[277975907.1838991900867891191292258850 +/- 2.87e-29]",
+      "S": "1.0000000000000000000000000000000000000",
+      "exact_degree": 31,
+      "interval_error": "[8.9890707485966070764306518485027767999e-5 +/- 4.22e-43]",
+      "error_display": 8.989070748596607e-05,
+      "real_enclosure": "[+/- 9.89e-5]",
+      "imag_enclosure": "[+/- 9.18e-5]",
+      "status": "interval-certified",
+      "scope": "pointwise field",
+      "seconds": 10.595655999999963
+    }
+  ],
+  "empirical_oscillatory_reference": 4.678284775e-06,
+  "continuous_phase_preserving_status": "unverified",
+  "adaptive_status": "unverified",
+  "reproduce": "python fresnel_certified_bound_v3.py --out NEW_DIRECTORY"
+}

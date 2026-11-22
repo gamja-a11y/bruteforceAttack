@@ -1,0 +1,2 @@
+p,Nf_eff,theta_ap,wavelength,AR,a_eff,z,area,a_x,a_y,resolution,fd_step,incident_nonuniformity,E,E_hat,moment_vs_meep,dE_dp,dE_hat_dp
+2.0,1,0.1,1.0,1.0,10.0,100.0,314.1592653589793,10.0,10.0,6,0.05,0.09771260483509074,0.1898389079965443,0.00442761558216971,0.18644299005367868,-0.0285961578840066,1.082009808191925e-06

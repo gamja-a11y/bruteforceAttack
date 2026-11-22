@@ -1,0 +1,2 @@
+method,degree_or_nodes,panels,real_half_width,M_sum_over_panels_and_sectors,S,exact_degree,interval_error,error_display,real_enclosure,imag_enclosure,status,scope,seconds
+GL,24,24,0.020833333333333332,[277975907.1838991900867891191292258850 +/- 2.87e-29],1.0000000000000000000000000000000000000,47,[1.3716233442072459528245013196567957763e-9 +/- 4.56e-47],1.371623344207246e-09,[8.93e-6 +/- 4.70e-9],[-1.81e-6 +/- 5.71e-9],interval-certified,pointwise field,23.850971000000072

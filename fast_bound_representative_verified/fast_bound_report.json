@@ -1,0 +1,207 @@
+{
+  "mathematical_results": {
+    "kernel_identity": "All real q >= 0 and K > 0, with t=sqrt(1+q)>=1; no upper restriction on q.",
+    "divergence_identity": "div((r'-r)H)=2H+2qH'=G. At q=0, H=G(0)/2.",
+    "taylor_integral_remainder": "|exp(ix)-sum_j (ix)^j/j!|<=|x|^(m+1)/(m+1)! for real x, from the integral remainder and |exp(itx)|=1.",
+    "moment_remainder_majorant": "rho <= sqrt(1+1/K^2) (K/512)^(m+1) J_[5(m+1)]/[(m+1)! lambda z].",
+    "uniform_approximation_implication": "If sup|G-P|<=eps_G, area integration and normalized ROI weights give ||L(G)-L(P)||_w <= A eps_G/(lambda z). A separate bound is required for boundary quadrature, the ROI norm, and floating-point error."
+  },
+  "certification_status": "empirically_validated_only",
+  "field_relative_accuracy_tolerance": 0.0001,
+  "primary_accuracy_gate_pass": true,
+  "cases": [
+    {
+      "p": 12.0,
+      "nf": 10.0,
+      "theta": 0.3,
+      "ar": 1.0,
+      "wavelength": 0.3,
+      "z": 33.333333333333336,
+      "K": 698.1317007977319,
+      "C_K": 1.3635464047820576,
+      "case": 1,
+      "actual": 4.678280750518191e-06,
+      "B0_osc": [
+        4.711615739595891e-06,
+        4.678284775088402e-06
+      ],
+      "B0_conventional": 0.0006080762826949031,
+      "reference_64_to_96_budget": [
+        7.902456516237969e-19,
+        7.892270344457771e-19
+      ],
+      "reference_converged": true,
+      "selected_degree": 32,
+      "area_order": 32,
+      "boundary_order": 32,
+      "moment_setup_wall_s": 0.0008569999999963329,
+      "moment_setup_cpu_s": 0.0,
+      "moment_55_digit_relative_errors": [
+        1.1273822143835937e-15,
+        3.5566740702488736e-16
+      ]
+    },
+    {
+      "p": 2.0,
+      "nf": 1.0,
+      "theta": 0.1,
+      "ar": 1.0,
+      "wavelength": 1.0,
+      "z": 100.0,
+      "K": 628.3185307179587,
+      "C_K": 1.2271934377099785,
+      "case": 2,
+      "actual": 4.2811559437583147e-10,
+      "B0_osc": [
+        4.2811559525743653e-10,
+        4.2811559437583147e-10
+      ],
+      "B0_conventional": 6.746481494396355e-10,
+      "reference_64_to_96_budget": [
+        8.895030607154833e-24,
+        8.889911700753779e-24
+      ],
+      "reference_converged": true,
+      "selected_degree": 12,
+      "area_order": 32,
+      "boundary_order": 32,
+      "moment_setup_wall_s": 0.0008487000000059197,
+      "moment_setup_cpu_s": 0.0,
+      "moment_55_digit_relative_errors": null
+    },
+    {
+      "p": 4.0,
+      "nf": 3.0,
+      "theta": 0.2,
+      "ar": 1.0,
+      "wavelength": 0.6666666666666666,
+      "z": 50.0,
+      "K": 471.238898038469,
+      "C_K": 0.9204002159323181,
+      "case": 3,
+      "actual": 1.6837034619366157e-07,
+      "B0_osc": [
+        1.6837169101732064e-07,
+        1.683703461952748e-07
+      ],
+      "B0_conventional": 1.7496672982998335e-06,
+      "reference_64_to_96_budget": [
+        1.0645667451966907e-20,
+        1.064545749597039e-20
+      ],
+      "reference_converged": true,
+      "selected_degree": 16,
+      "area_order": 32,
+      "boundary_order": 32,
+      "moment_setup_wall_s": 0.0008328999997502251,
+      "moment_setup_cpu_s": 0.0,
+      "moment_55_digit_relative_errors": null
+    },
+    {
+      "p": 8.0,
+      "nf": 10.0,
+      "theta": 0.3,
+      "ar": 1.0,
+      "wavelength": 0.3,
+      "z": 33.333333333333336,
+      "K": 698.1317007977319,
+      "C_K": 1.3635464047820576,
+      "case": 4,
+      "actual": 5.145990528300713e-06,
+      "B0_osc": [
+        5.174727748895834e-06,
+        5.145993582717724e-06
+      ],
+      "B0_conventional": 0.0005760935639825686,
+      "reference_64_to_96_budget": [
+        8.04636889004388e-19,
+        8.038246933210113e-19
+      ],
+      "reference_converged": true,
+      "selected_degree": 24,
+      "area_order": 32,
+      "boundary_order": 32,
+      "moment_setup_wall_s": 0.0008966999998847314,
+      "moment_setup_cpu_s": 0.0,
+      "moment_55_digit_relative_errors": null
+    },
+    {
+      "p": 12.0,
+      "nf": 3.0,
+      "theta": 0.2,
+      "ar": 2.0,
+      "wavelength": 0.6666666666666666,
+      "z": 50.0,
+      "K": 471.238898038469,
+      "C_K": 0.9204002159323181,
+      "case": 5,
+      "actual": 5.044803494159962e-07,
+      "B0_osc": [
+        5.045045362051173e-07,
+        5.044803495391925e-07
+      ],
+      "B0_conventional": 7.1085606007918625e-06,
+      "reference_64_to_96_budget": [
+        3.9290882220115506e-20,
+        3.9299764508091745e-20
+      ],
+      "reference_converged": true,
+      "selected_degree": 16,
+      "area_order": 32,
+      "boundary_order": 32,
+      "moment_setup_wall_s": 0.0008413999998992949,
+      "moment_setup_cpu_s": 0.0,
+      "moment_55_digit_relative_errors": null
+    },
+    {
+      "p": 12.0,
+      "nf": 3.0,
+      "theta": 0.2,
+      "ar": 4.0,
+      "wavelength": 0.6666666666666666,
+      "z": 50.0,
+      "K": 471.238898038469,
+      "C_K": 0.9204002159323181,
+      "case": 6,
+      "actual": 4.263607656375855e-06,
+      "B0_osc": [
+        4.265748525897186e-06,
+        4.263607764190201e-06
+      ],
+      "B0_conventional": 8.018576606082075e-05,
+      "reference_64_to_96_budget": [
+        4.094273194388921e-19,
+        4.0921271042110426e-19
+      ],
+      "reference_converged": true,
+      "selected_degree": 32,
+      "area_order": 32,
+      "boundary_order": 32,
+      "moment_setup_wall_s": 0.0018522000000302796,
+      "moment_setup_cpu_s": 0.0,
+      "moment_55_digit_relative_errors": null
+    }
+  ],
+  "benchmark": [],
+  "identical_amplitude_and_phase_conventions": true,
+  "environment": {
+    "python": "3.14.7",
+    "numpy": "2.5.5",
+    "scipy": "1.18.1",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD",
+    "thread_settings": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    }
+  },
+  "limits": [
+    "The sampled Chebyshev uniform error and observed rule differences are empirical estimates. No certified epsilon_L or validated floating-point/ROI norm enclosure was produced.",
+    "Analytic moment envelopes concern continuous moments; their numerically evaluated ROI norms are not certified.",
+    "Benchmark memory is a working-array budget, not measured peak process RSS.",
+    "Identical nodes, normalized comparison measure, no phase alignment, and no amplitude fit.",
+    "Each benchmark evaluates both Taylor orders. The 2D method includes direct positive remainder quadrature; boundary methods use the moment majorant.",
+    "Cold benchmark includes setup, field and remainder evaluation, after selecting a rule. It excludes the separate accuracy audit and does not time a certified error budget."
+  ]
+}

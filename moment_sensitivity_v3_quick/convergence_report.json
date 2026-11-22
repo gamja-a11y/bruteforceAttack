@@ -1,0 +1,422 @@
+{
+  "plan": {
+    "physical_cases": 5,
+    "field_evaluations_upper": 74,
+    "aperture_observation_point_pairs_upper": 202358784,
+    "batch_array_budget_mib": 16.0
+  },
+  "quick": true,
+  "archived_v2_rows": 200,
+  "archived_v2_path": "C:\\Users\\smhsu\\OneDrive\\\ubb38\uc11c\\ChatGPT\\\ud504\ub808\uc988\ub12c \uacf5\ubd80 \ubc0f \ubb50\uc2dc\uae30\uc800\uc2dc\uae30\\moment_sensitivity_v2_results\\nf_theta_2d_sweep.csv",
+  "v2_cases_not_checked": 195,
+  "meep_executed": false,
+  "thresholds": {
+    "relative": 0.01,
+    "absolute_floor": 1e-07,
+    "near_zero_slope": 1e-07,
+    "area_relative": 1e-06
+  },
+  "notes": [
+    "Each axis is varied separately with the other two held at their finest values.",
+    "Ratios use abs(change)/max(absolute_floor, relative*abs(finest)); >1 exceeds tolerance.",
+    "The last pair on each axis is a finite-resolution stability test, not an error bound.",
+    "A v2 discrepancy can occur even when the v3 last steps pass, and vice versa.",
+    "Near-zero sensitivities are compared in absolute terms, without a relative percentage.",
+    "All trial stencils are checked for area conservation by quadrature. NF and theta are reconstructed from wavelength, distance and fixed effective radius."
+  ],
+  "cases": [
+    {
+      "nf": 1.0,
+      "theta_ap": 0.1,
+      "p": 1.0,
+      "convergence_status": "quick_only",
+      "sensitivity_last_step_exceeds_tolerance": false,
+      "field_last_step_exceeds_tolerance": false,
+      "max_sensitivity_tolerance_ratio": 0.017138730510159766,
+      "max_field_tolerance_ratio": 3.6322622388697765e-09,
+      "v2_sensitivity_exceeds_tolerance": false,
+      "v2_max_sensitivity_tolerance_ratio": 3.350626834749966e-05,
+      "all_stencil_areas_pass": true,
+      "ratios_by_axis": {
+        "aperture_order": {
+          "E": 1.981636602779714e-12,
+          "E_hat": 1.6388855583047404e-12,
+          "E_res": 1.0258346413441146e-11,
+          "S_E": 0.00019061917787007243,
+          "S_E_hat": 0.00019137563923551638
+        },
+        "roi_order": {
+          "E": 1.5862622830327416e-09,
+          "E_hat": 1.7470975297516951e-09,
+          "E_res": 3.6322622388697765e-09,
+          "S_E": 8.734450000009296e-09,
+          "S_E_hat": 9.442165372177132e-09
+        },
+        "fd_step": {
+          "E": 0.0,
+          "E_hat": 0.0,
+          "E_res": 0.0,
+          "S_E": 0.016198323293580376,
+          "S_E_hat": 0.017138730510159766
+        }
+      },
+      "finest": {
+        "E": 0.0028669330067151513,
+        "E_hat": 0.0028578892293017965,
+        "E_res": 7.887098354927762e-05,
+        "S_E": 0.005213931965153233,
+        "S_E_hat": 0.005268657190533226,
+        "aperture_order": 48,
+        "roi_order": 16,
+        "fd_h": 0.005
+      },
+      "v2": {
+        "E": 0.0028669330067151036,
+        "E_hat": 0.002857889229301748,
+        "E_res": 7.887098354927351e-05,
+        "S_E": 0.005213933705233752,
+        "S_E_hat": 0.005268658955863642
+      },
+      "finest_delta_from_v2": {
+        "E_abs_change_vs_v2": 4.7704895589362195e-17,
+        "E_rel_change_vs_v2": 1.663969666456276e-14,
+        "E_hat_abs_change_vs_v2": 4.85722573273506e-17,
+        "E_hat_rel_change_vs_v2": 1.699585023427167e-14,
+        "E_res_abs_change_vs_v2": 4.106415728288848e-18,
+        "E_res_rel_change_vs_v2": 5.2064974259176365e-14,
+        "S_E_abs_change_vs_v2": 1.740080518911058e-09,
+        "S_E_rel_change_vs_v2": 3.337366022058093e-07,
+        "S_E_hat_abs_change_vs_v2": 1.765330416569899e-09,
+        "S_E_hat_rel_change_vs_v2": 3.3506257120803234e-07
+      }
+    },
+    {
+      "nf": 1.0,
+      "theta_ap": 0.1,
+      "p": 1.5,
+      "convergence_status": "quick_only",
+      "sensitivity_last_step_exceeds_tolerance": false,
+      "field_last_step_exceeds_tolerance": false,
+      "max_sensitivity_tolerance_ratio": 0.014837742787891682,
+      "max_field_tolerance_ratio": 2.909058957761985e-07,
+      "v2_sensitivity_exceeds_tolerance": false,
+      "v2_max_sensitivity_tolerance_ratio": 2.4035668056271804e-06,
+      "all_stencil_areas_pass": true,
+      "ratios_by_axis": {
+        "aperture_order": {
+          "E": 3.37934272465634e-08,
+          "E_hat": 3.516821834585573e-08,
+          "E_res": 2.909058957761985e-07,
+          "S_E": 2.052721244185466e-05,
+          "S_E_hat": 2.0611364575538984e-05
+        },
+        "roi_order": {
+          "E": 2.4435777177745546e-12,
+          "E_hat": 2.3775687672113183e-12,
+          "E_res": 4.4256450960725107e-11,
+          "S_E": 2.0518492082719504e-10,
+          "S_E_hat": 1.6875306679214358e-10
+        },
+        "fd_step": {
+          "E": 0.0,
+          "E_hat": 0.0,
+          "E_res": 0.0,
+          "S_E": 0.014837742787891682,
+          "S_E_hat": 0.014835508949923314
+        }
+      },
+      "finest": {
+        "E": 0.004223972336538664,
+        "E_hat": 0.004231800274053324,
+        "E_res": 0.00011195664859470635,
+        "S_E": 0.001014532726274428,
+        "S_E_hat": 0.0010279656002420978,
+        "aperture_order": 48,
+        "roi_order": 16,
+        "fd_h": 0.005
+      },
+      "v2": {
+        "E": 0.004223972336776075,
+        "E_hat": 0.004231800274291728,
+        "E_res": 0.00011195664856821713,
+        "S_E": 0.0010145327019875187,
+        "S_E_hat": 0.0010279655755342579
+      },
+      "finest_delta_from_v2": {
+        "E_abs_change_vs_v2": 2.3741165283697185e-13,
+        "E_rel_change_vs_v2": 5.620577833096678e-11,
+        "E_hat_abs_change_vs_v2": 2.384039146652306e-13,
+        "E_hat_rel_change_vs_v2": 5.633628697307365e-11,
+        "E_res_abs_change_vs_v2": 2.6489227478165844e-14,
+        "E_res_rel_change_vs_v2": 2.366025405094678e-10,
+        "S_E_abs_change_vs_v2": 2.428690928923949e-11,
+        "S_E_rel_change_vs_v2": 2.393901077970208e-08,
+        "S_E_hat_abs_change_vs_v2": 2.470783994068526e-11,
+        "S_E_hat_rel_change_vs_v2": 2.4035668633985157e-08
+      }
+    },
+    {
+      "nf": 1.0,
+      "theta_ap": 0.1,
+      "p": 2.0,
+      "convergence_status": "quick_only",
+      "sensitivity_last_step_exceeds_tolerance": false,
+      "field_last_step_exceeds_tolerance": false,
+      "max_sensitivity_tolerance_ratio": 0.3242647153393896,
+      "max_field_tolerance_ratio": 1.1688774735934465e-11,
+      "v2_sensitivity_exceeds_tolerance": false,
+      "v2_max_sensitivity_tolerance_ratio": 0.00036487826649000965,
+      "all_stencil_areas_pass": true,
+      "ratios_by_axis": {
+        "aperture_order": {
+          "E": 2.9453820950310586e-13,
+          "E_hat": 2.54668630961919e-13,
+          "E_res": 1.1688774735934465e-11,
+          "S_E": 0.0030090565455997975,
+          "S_E_hat": 0.0030548176835343277
+        },
+        "roi_order": {
+          "E": 2.9453820950310586e-13,
+          "E_hat": 5.876968406813515e-14,
+          "E_res": 1.2180687099570985e-12,
+          "S_E": 7.806255641895632e-09,
+          "S_E_hat": 8.673617379884035e-10
+        },
+        "fd_step": {
+          "E": 0.0,
+          "E_hat": 0.0,
+          "E_res": 0.0,
+          "S_E": 0.3199579490242854,
+          "S_E_hat": 0.3242647153393896
+        }
+      },
+      "finest": {
+        "E": 0.004417228614166903,
+        "E_hat": 0.004427597757626977,
+        "E_res": 0.00011571291608671225,
+        "S_E": 1.0617402790291663e-08,
+        "S_E_hat": 1.076023662532899e-08,
+        "aperture_order": 48,
+        "roi_order": 16,
+        "fd_h": 0.005
+      },
+      "v2": {
+        "E": 0.004417228614166854,
+        "E_hat": 0.004427597757626932,
+        "E_res": 0.00011571291608670819,
+        "S_E": 1.0653345480088339e-08,
+        "S_E_hat": 1.079672445197799e-08
+      },
+      "finest_delta_from_v2": {
+        "E_abs_change_vs_v2": 4.85722573273506e-17,
+        "E_rel_change_vs_v2": 1.0996093154782741e-14,
+        "E_hat_abs_change_vs_v2": 4.5102810375396984e-17,
+        "E_hat_rel_change_vs_v2": 1.0186745238476864e-14,
+        "E_res_abs_change_vs_v2": 4.052205619664573e-18,
+        "E_res_rel_change_vs_v2": 3.501947541126781e-14,
+        "S_E_abs_change_vs_v2": 3.5942689796675253e-11,
+        "S_E_rel_change_vs_v2": null,
+        "S_E_hat_abs_change_vs_v2": 3.6487826649000965e-11,
+        "S_E_hat_rel_change_vs_v2": null
+      }
+    },
+    {
+      "nf": 1.0,
+      "theta_ap": 0.1,
+      "p": 12.0,
+      "convergence_status": "quick_only",
+      "sensitivity_last_step_exceeds_tolerance": false,
+      "field_last_step_exceeds_tolerance": false,
+      "max_sensitivity_tolerance_ratio": 0.0728228291320995,
+      "max_field_tolerance_ratio": 0.004463175289588517,
+      "v2_sensitivity_exceeds_tolerance": false,
+      "v2_max_sensitivity_tolerance_ratio": 0.022201119887383332,
+      "all_stencil_areas_pass": true,
+      "ratios_by_axis": {
+        "aperture_order": {
+          "E": 0.004463175289588517,
+          "E_hat": 0.004452792758390039,
+          "E_res": 0.00033857704423544534,
+          "S_E": 0.07269750747039488,
+          "S_E_hat": 0.0728228291320995
+        },
+        "roi_order": {
+          "E": 2.9794649852682383e-09,
+          "E_hat": 3.2106541526501655e-09,
+          "E_res": 4.601943191595211e-09,
+          "S_E": 1.3072721768057782e-08,
+          "S_E_hat": 1.990913727768882e-08
+        },
+        "fd_step": {
+          "E": 0.0,
+          "E_hat": 0.0,
+          "E_res": 0.0,
+          "S_E": 0.00012232189334110893,
+          "S_E_hat": 0.00012216578452544489
+        }
+      },
+      "finest": {
+        "E": 0.003127240431469907,
+        "E_hat": 0.0031217444965658345,
+        "E_res": 8.760983541799227e-05,
+        "S_E": -3.483321381141623e-05,
+        "S_E_hat": -3.5288470714295306e-05,
+        "aperture_order": 48,
+        "roi_order": 16,
+        "fd_h": 0.005
+      },
+      "v2": {
+        "E": 0.003127274591180121,
+        "E_hat": 0.003121778336385702,
+        "E_res": 8.760950025570705e-05,
+        "S_E": -3.4825480447857327e-05,
+        "S_E_hat": -3.528064987817249e-05
+      },
+      "finest_delta_from_v2": {
+        "E_abs_change_vs_v2": 3.415971021412251e-08,
+        "E_rel_change_vs_v2": 1.0923156639478806e-05,
+        "E_hat_abs_change_vs_v2": 3.383981986727208e-08,
+        "E_hat_rel_change_vs_v2": 1.083991757930218e-05,
+        "E_res_abs_change_vs_v2": 3.3516228521387505e-10,
+        "E_res_rel_change_vs_v2": 3.8256385921119545e-06,
+        "S_E_abs_change_vs_v2": 7.733363558901085e-09,
+        "S_E_rel_change_vs_v2": 0.0002220604987913925,
+        "S_E_hat_abs_change_vs_v2": 7.820836122815478e-09,
+        "S_E_hat_rel_change_vs_v2": 0.0002216749450427241
+      }
+    },
+    {
+      "nf": 10.0,
+      "theta_ap": 0.3,
+      "p": 12.0,
+      "convergence_status": "quick_only",
+      "sensitivity_last_step_exceeds_tolerance": true,
+      "field_last_step_exceeds_tolerance": true,
+      "max_sensitivity_tolerance_ratio": 131.7159558843924,
+      "max_field_tolerance_ratio": 2.6375686901753848,
+      "v2_sensitivity_exceeds_tolerance": true,
+      "v2_max_sensitivity_tolerance_ratio": 172.086532705334,
+      "all_stencil_areas_pass": true,
+      "ratios_by_axis": {
+        "aperture_order": {
+          "E": 0.09460634199897665,
+          "E_hat": 0.13376184185645734,
+          "E_res": 0.02959270943188635,
+          "S_E": 1.408842815087763,
+          "S_E_hat": 12.903846224682066
+        },
+        "roi_order": {
+          "E": 2.6375686901753848,
+          "E_hat": 1.354794371780101,
+          "E_res": 2.356702191625325,
+          "S_E": 116.0583949173448,
+          "S_E_hat": 131.7159558843924
+        },
+        "fd_step": {
+          "E": 0.0,
+          "E_hat": 0.0,
+          "E_res": 0.0,
+          "S_E": 0.0007798714352926787,
+          "S_E_hat": 0.0005072800344376816
+        }
+      },
+      "finest": {
+        "E": 0.06556773832172234,
+        "E_hat": 0.0846352262184617,
+        "E_res": 0.06902112347481727,
+        "S_E": -0.0007732877512614533,
+        "S_E_hat": -0.0012980938172368894,
+        "aperture_order": 48,
+        "roi_order": 16,
+        "fd_h": 0.005
+      },
+      "v2": {
+        "E": 0.07257423114678425,
+        "E_hat": 0.08803365599921509,
+        "E_res": 0.07054409562389738,
+        "S_E": -0.002104011830242336,
+        "S_E_hat": -0.00279352241088493
+      },
+      "finest_delta_from_v2": {
+        "E_abs_change_vs_v2": 0.007006492825061911,
+        "E_rel_change_vs_v2": 0.09654243268373043,
+        "E_hat_abs_change_vs_v2": 0.003398429780753387,
+        "E_hat_rel_change_vs_v2": 0.03860375605420372,
+        "E_res_abs_change_vs_v2": 0.0015229721490801068,
+        "E_res_rel_change_vs_v2": 0.02158893860089671,
+        "S_E_abs_change_vs_v2": 0.0013307240789808827,
+        "S_E_rel_change_vs_v2": 0.6324698653560387,
+        "S_E_hat_abs_change_vs_v2": 0.0014954285936480405,
+        "S_E_hat_rel_change_vs_v2": 0.5353200632366932
+      }
+    }
+  ],
+  "outside_last_step_tolerance": [],
+  "v2_sensitivity_discrepancies": [
+    {
+      "nf": 10.0,
+      "theta_ap": 0.3,
+      "p": 12.0,
+      "convergence_status": "quick_only",
+      "sensitivity_last_step_exceeds_tolerance": true,
+      "field_last_step_exceeds_tolerance": true,
+      "max_sensitivity_tolerance_ratio": 131.7159558843924,
+      "max_field_tolerance_ratio": 2.6375686901753848,
+      "v2_sensitivity_exceeds_tolerance": true,
+      "v2_max_sensitivity_tolerance_ratio": 172.086532705334,
+      "all_stencil_areas_pass": true,
+      "ratios_by_axis": {
+        "aperture_order": {
+          "E": 0.09460634199897665,
+          "E_hat": 0.13376184185645734,
+          "E_res": 0.02959270943188635,
+          "S_E": 1.408842815087763,
+          "S_E_hat": 12.903846224682066
+        },
+        "roi_order": {
+          "E": 2.6375686901753848,
+          "E_hat": 1.354794371780101,
+          "E_res": 2.356702191625325,
+          "S_E": 116.0583949173448,
+          "S_E_hat": 131.7159558843924
+        },
+        "fd_step": {
+          "E": 0.0,
+          "E_hat": 0.0,
+          "E_res": 0.0,
+          "S_E": 0.0007798714352926787,
+          "S_E_hat": 0.0005072800344376816
+        }
+      },
+      "finest": {
+        "E": 0.06556773832172234,
+        "E_hat": 0.0846352262184617,
+        "E_res": 0.06902112347481727,
+        "S_E": -0.0007732877512614533,
+        "S_E_hat": -0.0012980938172368894,
+        "aperture_order": 48,
+        "roi_order": 16,
+        "fd_h": 0.005
+      },
+      "v2": {
+        "E": 0.07257423114678425,
+        "E_hat": 0.08803365599921509,
+        "E_res": 0.07054409562389738,
+        "S_E": -0.002104011830242336,
+        "S_E_hat": -0.00279352241088493
+      },
+      "finest_delta_from_v2": {
+        "E_abs_change_vs_v2": 0.007006492825061911,
+        "E_rel_change_vs_v2": 0.09654243268373043,
+        "E_hat_abs_change_vs_v2": 0.003398429780753387,
+        "E_hat_rel_change_vs_v2": 0.03860375605420372,
+        "E_res_abs_change_vs_v2": 0.0015229721490801068,
+        "E_res_rel_change_vs_v2": 0.02158893860089671,
+        "S_E_abs_change_vs_v2": 0.0013307240789808827,
+        "S_E_rel_change_vs_v2": 0.6324698653560387,
+        "S_E_hat_abs_change_vs_v2": 0.0014954285936480405,
+        "S_E_hat_rel_change_vs_v2": 0.5353200632366932
+      }
+    }
+  ]
+}

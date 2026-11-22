@@ -1,0 +1,106 @@
+{
+  "backend": "0.9.0",
+  "proof": {
+    "symbolic_identities_verified": true,
+    "range": "All real q >= 0 and K > 0, with t=sqrt(1+q)>=1; no upper restriction on q.",
+    "polynomial_coefficients_descending_in_t_minus_1": {
+      "positive_amplitude_denominator": [
+        35,
+        245,
+        749,
+        1295,
+        1364,
+        872,
+        312,
+        48
+      ],
+      "phase_inequality": [
+        1,
+        14,
+        96,
+        424,
+        1296,
+        2752,
+        3968,
+        3712,
+        2048,
+        0
+      ],
+      "amplitude_inequality": [
+        245,
+        4165,
+        32193,
+        149695,
+        466718,
+        1028664,
+        1644664,
+        1923152,
+        1632960,
+        982016,
+        395392,
+        86016,
+        0
+      ]
+    },
+    "kernel": "Write Delta F=e^(iK phi_PP)[A-A_PP+A(expm1(iK Delta phi))]. Use |expm1(iu)|<=|u| for real u and |A|<=sqrt(1+1/K^2).",
+    "field_bounds": "Triangle inequality pointwise in the area integral for B0 and in the fixed-AR boundary transport integral for B1; then use monotonicity of the ROI L2 norm.",
+    "prediction_bounds": "Reverse triangle inequality gives |D-D_tilde|<=B0. Also |N-||U_PP||||<=B0, so if B0<||U_PP|| then N>=||U_PP||-B0>0, yielding the practical common-factor bound.",
+    "sensitivity_bound": "In the real inner product Re<.,.>, derivative of ||X|| is Re<X/||X||,X'> at nonzero X. For X=U_RS-U_F and Y=U_PP-U_F, ||X/||X||-Y/||Y||||<=2||X-Y||/min(||X||,||Y||) by the triangle and reverse triangle inequalities. Hence |D'-D_tilde'|<=B1+2B0||Y'||/min(D,D_tilde). The quotient rule and |N'|<=||U_RS'|| give the proposed BS. Requires differentiable fields and N,D,D_tilde>0."
+  },
+  "continuous_geometry": [
+    {
+      "bits": 64,
+      "v2": "[0.000608076282694900154 +/- 2.43e-22]",
+      "v3": "[0.000504232411187949603 +/- 1.58e-22]",
+      "v3_display": 0.0005042324111879496,
+      "seconds": 0.009911899999906382,
+      "status": "interval-certified"
+    },
+    {
+      "bits": 128,
+      "v2": "[0.00060807628269490014576758402504726903490 +/- 2.27e-42]",
+      "v3": "[0.00050423241118794959262760637142125952007 +/- 4.65e-42]",
+      "v3_display": 0.0005042324111879495,
+      "seconds": 0.011406000000079075,
+      "status": "interval-certified"
+    },
+    {
+      "bits": 192,
+      "v2": "[0.000608076282694900145767584025047269034440205959860019343557 +/- 3.37e-61]",
+      "v3": "[0.000504232411187949592627606371421259519470754809648689035374 +/- 4.36e-61]",
+      "v3_display": 0.0005042324111879495,
+      "seconds": 0.01574069999992389,
+      "status": "interval-certified"
+    },
+    {
+      "bits": 256,
+      "v2": "[0.0006080762826949001457675840250472690344402059598600193435334668320207625300430 +/- 4.77e-80]",
+      "v3": "[0.0005042324111879495926276063714212595194707548096486890353435722636157808480752 +/- 3.58e-80]",
+      "v3_display": 0.0005042324111879495,
+      "seconds": 0.01820410000004813,
+      "status": "interval-certified"
+    }
+  ],
+  "boundary": [
+    {
+      "method": "GL",
+      "degree_or_nodes": 24,
+      "panels": 24,
+      "real_half_width": 0.020833333333333332,
+      "M_sum_over_panels_and_sectors": "[277975907.1838991900867891191292258850 +/- 2.87e-29]",
+      "S": "1.0000000000000000000000000000000000000",
+      "exact_degree": 47,
+      "interval_error": "[1.3716233442072459528245013196567957763e-9 +/- 4.56e-47]",
+      "error_display": 1.371623344207246e-09,
+      "real_enclosure": "[8.93e-6 +/- 4.70e-9]",
+      "imag_enclosure": "[-1.81e-6 +/- 5.71e-9]",
+      "status": "interval-certified",
+      "scope": "pointwise field",
+      "seconds": 23.850971000000072
+    }
+  ],
+  "empirical_oscillatory_reference": 4.678284775e-06,
+  "continuous_phase_preserving_status": "unverified",
+  "adaptive_status": "unverified",
+  "reproduce": "python fresnel_certified_bound_v3.py --out NEW_DIRECTORY"
+}

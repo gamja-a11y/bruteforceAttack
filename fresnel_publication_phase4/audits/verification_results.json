@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "checked_at_issuance_by": "rho_independent_verifier.check(expected)",
+  "archived_attempts_reconciled": 387,
+  "original_rho2_overlaps": 16,
+  "holdout_method_runs": 144,
+  "overlap_groups": 64,
+  "negative_tests": 9,
+  "positive_controls": 1,
+  "wsl_representatives": 2,
+  "independent_development_contour_replays": 128,
+  "trust": "Theorem, reviewed Python code, and shared FLINT/Arb. Independent mathematical replay at issuance; final aggregation checks provenance, exact endpoints, inputs and intersections."
+}

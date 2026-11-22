@@ -1,0 +1,516 @@
+{
+  "records": [
+    {
+      "model": "Pade",
+      "inputs": {
+        "p": "12",
+        "nf": "10",
+        "theta": "0.3",
+        "ar": "1",
+        "radius": "5",
+        "degree": 96,
+        "bits": 768,
+        "model": "Pade",
+        "Q": null
+      },
+      "verified": true,
+      "stages": [
+        "physical",
+        "geometry",
+        "identity",
+        "analyticity",
+        "contour",
+        "interpolation",
+        "source",
+        "gram",
+        "remainder",
+        "endpoints"
+      ],
+      "endpoint_display": [
+        4.678280604901249e-06,
+        4.678280896135342e-06
+      ],
+      "generator_sha256": "954f078c856ef6ec6c15a0a1a383714ae4ad025250c5ecbf64904e6f6a75e8db",
+      "verifier_sha256": "219f26d04908572d87c9524264e9ae6aa51dee5d51a342618f040552e8d9227a",
+      "trust": "Local reviewed source, CPython and FLINT/Arb. Independent numerical replay of contour, Lobatto/DCT-I, source and Gram; analytic theorems rely on the written proof."
+    },
+    {
+      "model": "Fresnel",
+      "inputs": {
+        "p": "12",
+        "nf": "10",
+        "theta": "0.3",
+        "ar": "1",
+        "radius": "5",
+        "degree": 96,
+        "bits": 768,
+        "model": "Fresnel",
+        "Q": null
+      },
+      "verified": true,
+      "stages": [
+        "physical",
+        "geometry",
+        "identity",
+        "analyticity",
+        "contour",
+        "interpolation",
+        "source",
+        "gram",
+        "remainder",
+        "endpoints"
+      ],
+      "endpoint_display": [
+        0.07356438911682356,
+        0.07356438911830926
+      ],
+      "generator_sha256": "954f078c856ef6ec6c15a0a1a383714ae4ad025250c5ecbf64904e6f6a75e8db",
+      "verifier_sha256": "219f26d04908572d87c9524264e9ae6aa51dee5d51a342618f040552e8d9227a",
+      "trust": "Local reviewed source, CPython and FLINT/Arb. Independent numerical replay of contour, Lobatto/DCT-I, source and Gram; analytic theorems rely on the written proof."
+    },
+    {
+      "model": "Fresnel",
+      "inputs": {
+        "p": "1",
+        "nf": "1",
+        "theta": "0.1",
+        "ar": "1",
+        "radius": "5",
+        "degree": 8,
+        "bits": 256,
+        "model": "Fresnel",
+        "Q": null
+      },
+      "verified": true,
+      "stages": [
+        "physical",
+        "geometry",
+        "identity",
+        "analyticity",
+        "contour",
+        "interpolation",
+        "source",
+        "gram",
+        "remainder",
+        "endpoints"
+      ],
+      "endpoint_display": [
+        0.0,
+        0.105599118019162
+      ],
+      "generator_sha256": "954f078c856ef6ec6c15a0a1a383714ae4ad025250c5ecbf64904e6f6a75e8db",
+      "verifier_sha256": "219f26d04908572d87c9524264e9ae6aa51dee5d51a342618f040552e8d9227a",
+      "trust": "Local reviewed source, CPython and FLINT/Arb. Independent numerical replay of contour, Lobatto/DCT-I, source and Gram; analytic theorems rely on the written proof."
+    },
+    {
+      "model": "Fresnel",
+      "inputs": {
+        "p": "2",
+        "nf": "1",
+        "theta": "0.1",
+        "ar": "1",
+        "radius": "5",
+        "degree": 8,
+        "bits": 256,
+        "model": "Fresnel",
+        "Q": null
+      },
+      "verified": true,
+      "stages": [
+        "physical",
+        "geometry",
+        "identity",
+        "analyticity",
+        "contour",
+        "interpolation",
+        "source",
+        "gram",
+        "remainder",
+        "endpoints"
+      ],
+      "endpoint_display": [
+        0.0,
+        0.031826170059103195
+      ],
+      "generator_sha256": "954f078c856ef6ec6c15a0a1a383714ae4ad025250c5ecbf64904e6f6a75e8db",
+      "verifier_sha256": "219f26d04908572d87c9524264e9ae6aa51dee5d51a342618f040552e8d9227a",
+      "trust": "Local reviewed source, CPython and FLINT/Arb. Independent numerical replay of contour, Lobatto/DCT-I, source and Gram; analytic theorems rely on the written proof."
+    },
+    {
+      "model": "Fresnel",
+      "inputs": {
+        "p": "2",
+        "nf": "1",
+        "theta": "0.1",
+        "ar": "4",
+        "radius": "5",
+        "degree": 8,
+        "bits": 256,
+        "model": "Fresnel",
+        "Q": null
+      },
+      "verified": true,
+      "stages": [
+        "physical",
+        "geometry",
+        "identity",
+        "analyticity",
+        "contour",
+        "interpolation",
+        "source",
+        "gram",
+        "remainder",
+        "endpoints"
+      ],
+      "endpoint_display": [
+        0.0,
+        14.570019077408258
+      ],
+      "generator_sha256": "954f078c856ef6ec6c15a0a1a383714ae4ad025250c5ecbf64904e6f6a75e8db",
+      "verifier_sha256": "219f26d04908572d87c9524264e9ae6aa51dee5d51a342618f040552e8d9227a",
+      "trust": "Local reviewed source, CPython and FLINT/Arb. Independent numerical replay of contour, Lobatto/DCT-I, source and Gram; analytic theorems rely on the written proof."
+    },
+    {
+      "model": "Fresnel",
+      "inputs": {
+        "p": "2",
+        "nf": "1",
+        "theta": "0.1",
+        "ar": "0.25",
+        "radius": "5",
+        "degree": 8,
+        "bits": 256,
+        "model": "Fresnel",
+        "Q": null
+      },
+      "verified": true,
+      "stages": [
+        "physical",
+        "geometry",
+        "identity",
+        "analyticity",
+        "contour",
+        "interpolation",
+        "source",
+        "gram",
+        "remainder",
+        "endpoints"
+      ],
+      "endpoint_display": [
+        0.0,
+        14.570019077408258
+      ],
+      "generator_sha256": "954f078c856ef6ec6c15a0a1a383714ae4ad025250c5ecbf64904e6f6a75e8db",
+      "verifier_sha256": "219f26d04908572d87c9524264e9ae6aa51dee5d51a342618f040552e8d9227a",
+      "trust": "Local reviewed source, CPython and FLINT/Arb. Independent numerical replay of contour, Lobatto/DCT-I, source and Gram; analytic theorems rely on the written proof."
+    },
+    {
+      "model": "Fresnel",
+      "inputs": {
+        "p": "12",
+        "nf": "1",
+        "theta": "0.1",
+        "ar": "1",
+        "radius": "5",
+        "degree": 8,
+        "bits": 256,
+        "model": "Fresnel",
+        "Q": null
+      },
+      "verified": true,
+      "stages": [
+        "physical",
+        "geometry",
+        "identity",
+        "analyticity",
+        "contour",
+        "interpolation",
+        "source",
+        "gram",
+        "remainder",
+        "endpoints"
+      ],
+      "endpoint_display": [
+        0.0,
+        0.07650062103529781
+      ],
+      "generator_sha256": "954f078c856ef6ec6c15a0a1a383714ae4ad025250c5ecbf64904e6f6a75e8db",
+      "verifier_sha256": "219f26d04908572d87c9524264e9ae6aa51dee5d51a342618f040552e8d9227a",
+      "trust": "Local reviewed source, CPython and FLINT/Arb. Independent numerical replay of contour, Lobatto/DCT-I, source and Gram; analytic theorems rely on the written proof."
+    },
+    {
+      "model": "Fresnel",
+      "inputs": {
+        "p": "12",
+        "nf": "1",
+        "theta": "0.1",
+        "ar": "2",
+        "radius": "5",
+        "degree": 8,
+        "bits": 256,
+        "model": "Fresnel",
+        "Q": null
+      },
+      "verified": true,
+      "stages": [
+        "physical",
+        "geometry",
+        "identity",
+        "analyticity",
+        "contour",
+        "interpolation",
+        "source",
+        "gram",
+        "remainder",
+        "endpoints"
+      ],
+      "endpoint_display": [
+        0.0,
+        0.20184068453261164
+      ],
+      "generator_sha256": "954f078c856ef6ec6c15a0a1a383714ae4ad025250c5ecbf64904e6f6a75e8db",
+      "verifier_sha256": "219f26d04908572d87c9524264e9ae6aa51dee5d51a342618f040552e8d9227a",
+      "trust": "Local reviewed source, CPython and FLINT/Arb. Independent numerical replay of contour, Lobatto/DCT-I, source and Gram; analytic theorems rely on the written proof."
+    },
+    {
+      "model": "Fresnel",
+      "inputs": {
+        "p": "12",
+        "nf": "1",
+        "theta": "0.1",
+        "ar": "4",
+        "radius": "5",
+        "degree": 8,
+        "bits": 256,
+        "model": "Fresnel",
+        "Q": null
+      },
+      "verified": true,
+      "stages": [
+        "physical",
+        "geometry",
+        "identity",
+        "analyticity",
+        "contour",
+        "interpolation",
+        "source",
+        "gram",
+        "remainder",
+        "endpoints"
+      ],
+      "endpoint_display": [
+        0.0,
+        3.4979159141209877
+      ],
+      "generator_sha256": "954f078c856ef6ec6c15a0a1a383714ae4ad025250c5ecbf64904e6f6a75e8db",
+      "verifier_sha256": "219f26d04908572d87c9524264e9ae6aa51dee5d51a342618f040552e8d9227a",
+      "trust": "Local reviewed source, CPython and FLINT/Arb. Independent numerical replay of contour, Lobatto/DCT-I, source and Gram; analytic theorems rely on the written proof."
+    },
+    {
+      "model": "Fresnel",
+      "inputs": {
+        "p": "16",
+        "nf": "1",
+        "theta": "0.1",
+        "ar": "4",
+        "radius": "5",
+        "degree": 8,
+        "bits": 256,
+        "model": "Fresnel",
+        "Q": null
+      },
+      "verified": true,
+      "stages": [
+        "physical",
+        "geometry",
+        "identity",
+        "analyticity",
+        "contour",
+        "interpolation",
+        "source",
+        "gram",
+        "remainder",
+        "endpoints"
+      ],
+      "endpoint_display": [
+        0.0,
+        3.498024097786769
+      ],
+      "generator_sha256": "954f078c856ef6ec6c15a0a1a383714ae4ad025250c5ecbf64904e6f6a75e8db",
+      "verifier_sha256": "219f26d04908572d87c9524264e9ae6aa51dee5d51a342618f040552e8d9227a",
+      "trust": "Local reviewed source, CPython and FLINT/Arb. Independent numerical replay of contour, Lobatto/DCT-I, source and Gram; analytic theorems rely on the written proof."
+    },
+    {
+      "model": "Pade",
+      "inputs": {
+        "p": "2",
+        "nf": "10",
+        "theta": "0.1",
+        "ar": "0.25",
+        "radius": "5",
+        "degree": 8,
+        "bits": 256,
+        "model": "Pade",
+        "Q": "0.0625000000000000001"
+      },
+      "verified": true,
+      "stages": [
+        "physical",
+        "geometry",
+        "identity",
+        "analyticity",
+        "contour",
+        "interpolation",
+        "source",
+        "gram",
+        "remainder",
+        "endpoints"
+      ],
+      "endpoint_display": [
+        0.0,
+        4.372557108758538e+31
+      ],
+      "generator_sha256": "954f078c856ef6ec6c15a0a1a383714ae4ad025250c5ecbf64904e6f6a75e8db",
+      "verifier_sha256": "219f26d04908572d87c9524264e9ae6aa51dee5d51a342618f040552e8d9227a",
+      "trust": "Local reviewed source, CPython and FLINT/Arb. Independent numerical replay of contour, Lobatto/DCT-I, source and Gram; analytic theorems rely on the written proof."
+    },
+    {
+      "model": "Pade",
+      "inputs": {
+        "p": "1.5",
+        "nf": "0.3",
+        "theta": "0.3",
+        "ar": "0.5",
+        "radius": "3",
+        "degree": 8,
+        "bits": 256,
+        "model": "Pade",
+        "Q": null
+      },
+      "verified": true,
+      "stages": [
+        "physical",
+        "geometry",
+        "identity",
+        "analyticity",
+        "contour",
+        "interpolation",
+        "source",
+        "gram",
+        "remainder",
+        "endpoints"
+      ],
+      "endpoint_display": [
+        0.0,
+        0.001483366511975996
+      ],
+      "generator_sha256": "954f078c856ef6ec6c15a0a1a383714ae4ad025250c5ecbf64904e6f6a75e8db",
+      "verifier_sha256": "219f26d04908572d87c9524264e9ae6aa51dee5d51a342618f040552e8d9227a",
+      "trust": "Local reviewed source, CPython and FLINT/Arb. Independent numerical replay of contour, Lobatto/DCT-I, source and Gram; analytic theorems rely on the written proof."
+    },
+    {
+      "model": "Fresnel",
+      "inputs": {
+        "p": "12",
+        "nf": "10",
+        "theta": "0.3",
+        "ar": "1",
+        "radius": "5",
+        "degree": 4,
+        "bits": 256,
+        "model": "Fresnel",
+        "Q": null
+      },
+      "verified": true,
+      "stages": [
+        "physical",
+        "geometry",
+        "identity",
+        "analyticity",
+        "contour",
+        "interpolation",
+        "source",
+        "gram",
+        "remainder",
+        "endpoints"
+      ],
+      "endpoint_display": [
+        0.0,
+        3678409612185531.5
+      ],
+      "generator_sha256": "954f078c856ef6ec6c15a0a1a383714ae4ad025250c5ecbf64904e6f6a75e8db",
+      "verifier_sha256": "219f26d04908572d87c9524264e9ae6aa51dee5d51a342618f040552e8d9227a",
+      "trust": "Local reviewed source, CPython and FLINT/Arb. Independent numerical replay of contour, Lobatto/DCT-I, source and Gram; analytic theorems rely on the written proof."
+    },
+    {
+      "model": "Pade",
+      "inputs": {
+        "p": "12",
+        "nf": "10",
+        "theta": "0.3",
+        "ar": "1",
+        "radius": "5",
+        "degree": 32,
+        "bits": 80,
+        "model": "Pade",
+        "Q": null
+      },
+      "verified": true,
+      "stages": [
+        "physical",
+        "geometry",
+        "identity",
+        "analyticity",
+        "contour",
+        "interpolation",
+        "source",
+        "gram",
+        "remainder",
+        "endpoints"
+      ],
+      "endpoint_display": [
+        0.0,
+        2687696.8247231864
+      ],
+      "generator_sha256": "954f078c856ef6ec6c15a0a1a383714ae4ad025250c5ecbf64904e6f6a75e8db",
+      "verifier_sha256": "219f26d04908572d87c9524264e9ae6aa51dee5d51a342618f040552e8d9227a",
+      "trust": "Local reviewed source, CPython and FLINT/Arb. Independent numerical replay of contour, Lobatto/DCT-I, source and Gram; analytic theorems rely on the written proof."
+    },
+    {
+      "model": "Pade",
+      "inputs": {
+        "p": "12",
+        "nf": "10",
+        "theta": "0.3",
+        "ar": "1",
+        "radius": "5",
+        "degree": 96,
+        "bits": 1024,
+        "model": "Pade",
+        "Q": null
+      },
+      "verified": true,
+      "stages": [
+        "physical",
+        "geometry",
+        "identity",
+        "analyticity",
+        "contour",
+        "interpolation",
+        "source",
+        "gram",
+        "remainder",
+        "endpoints"
+      ],
+      "endpoint_display": [
+        4.678280604901249e-06,
+        4.678280896135342e-06
+      ],
+      "generator_sha256": "954f078c856ef6ec6c15a0a1a383714ae4ad025250c5ecbf64904e6f6a75e8db",
+      "verifier_sha256": "219f26d04908572d87c9524264e9ae6aa51dee5d51a342618f040552e8d9227a",
+      "trust": "Local reviewed source, CPython and FLINT/Arb. Independent numerical replay of contour, Lobatto/DCT-I, source and Gram; analytic theorems rely on the written proof."
+    }
+  ],
+  "certificate_sha256": "3d771463370c1cd16addf122949eee0f5b6bf389c246e6c5ceaad7e92d5bd9de",
+  "independent_verifier_sha256": "219f26d04908572d87c9524264e9ae6aa51dee5d51a342618f040552e8d9227a"
+}

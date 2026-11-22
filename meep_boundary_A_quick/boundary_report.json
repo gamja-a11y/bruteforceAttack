@@ -1,0 +1,363 @@
+{
+  "status": "completed",
+  "baseline": "/mnt/c/Users/smhsu/OneDrive/\ubb38\uc11c/ChatGPT/\ud504\ub808\uc988\ub12c \uacf5\ubd80 \ubc0f \ubb50\uc2dc\uae30\uc800\uc2dc\uae30/meep_caseA_v2",
+  "archived_metrics": {
+    "incident_aperture_rms_complex_nonuniformity": 0.082149937504068,
+    "incident_aperture_max_complex_nonuniformity": 0.2195935986439386,
+    "incident_mean_real": -0.754358546035659,
+    "incident_mean_imag": 0.16123855906545553,
+    "incident_mean_amplitude": 0.7713978797653892,
+    "incident_mean_phase_rad": 2.9310186456843033,
+    "incident_rms_amplitude": 0.7739964355594637,
+    "Meep_vs_RS_phase_aligned": 0.15568144321301403,
+    "Meep_vs_Fresnel_phase_aligned": 0.16030181918340877
+  },
+  "resolution": 6,
+  "observation_samples": 144,
+  "aperture_samples": 1600,
+  "wavelength": 1.0,
+  "Nf_eff": 1.0,
+  "theta_ap": 0.1,
+  "p": 2,
+  "aperture_radius": 10.0,
+  "observation_z": 100.0,
+  "screen_thickness": 0.2,
+  "runtime": 150.0,
+  "late_dft_window": [
+    135.0,
+    150.0
+  ],
+  "plans": [
+    {
+      "name": "control",
+      "group": "control",
+      "xy_clearance": 0.8,
+      "pml": 1.0,
+      "source_distance": 0.8,
+      "source_width": 21.6,
+      "cell": [
+        23.6,
+        23.6,
+        104.39999999999999
+      ],
+      "center_z": 49.6,
+      "clearances": {
+        "opening_xy": 0.8,
+        "source_xy": 0.0,
+        "source_z": 0.8,
+        "screen_z": 1.5,
+        "source_to_screen_front": 0.7000000000000001,
+        "observation_z": 0.7999999999999972,
+        "monitor_xy": 0.40000000000000036
+      },
+      "monitor_half_width": 10.4,
+      "source_touches_lateral_pml": true,
+      "estimated_yee_cells": 12642828,
+      "fdtd_runs": 2
+    },
+    {
+      "name": "A1",
+      "group": "A",
+      "xy_clearance": 1.8,
+      "pml": 1.0,
+      "source_distance": 0.8,
+      "source_width": 21.6,
+      "cell": [
+        25.6,
+        25.6,
+        104.39999999999999
+      ],
+      "center_z": 49.6,
+      "clearances": {
+        "opening_xy": 1.8,
+        "source_xy": 1.0,
+        "source_z": 0.8,
+        "screen_z": 1.5,
+        "source_to_screen_front": 0.7000000000000001,
+        "observation_z": 0.7999999999999972,
+        "monitor_xy": 1.4000000000000004
+      },
+      "monitor_half_width": 10.4,
+      "source_touches_lateral_pml": false,
+      "estimated_yee_cells": 14869932,
+      "fdtd_runs": 2
+    }
+  ],
+  "notes": [
+    "The source and monitors remain outside PML by nominal geometry; the baseline sheet touches the lateral inner face.",
+    "The PEC slab intentionally extends into lateral PML to preserve the archived screen geometry.",
+    "Archived Meep raw amplitude is reconstructed using its saved aperture incident mean. Primary scalar comparisons use that single fixed complex calibration for all runs; per-run incident calibration is labeled separately.",
+    "Intensity L1 is unchanged by phase alignment. Phase RMS uses reference intensity times quadrature weight.",
+    "The late DFT increment is a residual proxy, not an isolated reflection coefficient.",
+    "A/B stability uses the last two levels and tail checks at this resolution; one-factor changes do not decompose or bound vector/PEC model differences."
+  ],
+  "last_pair_relative_l2_tolerance": 0.01,
+  "metrics": [
+    {
+      "name": "control",
+      "group": "control",
+      "xy_clearance": 0.8,
+      "pml": 1.0,
+      "source_distance": 0.8,
+      "source_width": 21.6,
+      "resolution": 6,
+      "opening_xy": 0.8,
+      "source_xy": 0.0,
+      "source_z": 0.8,
+      "screen_z": 1.5,
+      "source_to_screen_front": 0.7000000000000001,
+      "observation_z": 0.7999999999999972,
+      "monitor_xy": 0.40000000000000036,
+      "incident_aperture_rms_complex_nonuniformity": 0.07692202193855473,
+      "incident_aperture_max_complex_nonuniformity": 0.2026225494247915,
+      "incident_mean_real": -0.20449343959049854,
+      "incident_mean_imag": 0.7844142293818576,
+      "incident_mean_amplitude": 0.8106313897773059,
+      "incident_mean_phase_rad": 1.825815950845962,
+      "incident_rms_amplitude": 0.8130261045584009,
+      "incident_mean_gain_vs_archive": 1.050860277220167,
+      "incident_observation_dft_tail_l2": 0.37131399450593777,
+      "incident_aperture_dft_tail_l2": 3.2807246884000535e-11,
+      "transmitted_dft_tail_l2": 0.3589784939771451,
+      "baseline_meep_relative_l2_raw": 1.072105248119698,
+      "baseline_meep_relative_l2_aligned": 0.04956082827095389,
+      "baseline_meep_intensity_l1": 0.10088780461964568,
+      "baseline_meep_phase_rms_raw_rad": 1.1002033368698807,
+      "baseline_meep_phase_rms_aligned_rad": 0.005008853105493435,
+      "baseline_meep_phase_offset_rad": -1.100193698668693,
+      "control_meep_relative_l2_raw": 0.0,
+      "control_meep_relative_l2_aligned": 0.0,
+      "control_meep_intensity_l1": 0.0,
+      "control_meep_phase_rms_raw_rad": 2.132301017759942e-17,
+      "control_meep_phase_rms_aligned_rad": 2.132301017759942e-17,
+      "control_meep_phase_offset_rad": 0.0,
+      "rs_relative_l2_raw": 1.6199875949752833,
+      "rs_relative_l2_aligned": 0.16402811352352498,
+      "rs_intensity_l1": 0.20717143217692446,
+      "rs_phase_rms_raw_rad": 1.769041424630753,
+      "rs_phase_rms_aligned_rad": 0.11918493123460776,
+      "rs_phase_offset_rad": -1.7634974634763403,
+      "fresnel_relative_l2_raw": 1.62142465444762,
+      "fresnel_relative_l2_aligned": 0.16815390697897253,
+      "fresnel_intensity_l1": 0.2097005090122805,
+      "fresnel_phase_rms_raw_rad": 1.7703605802853974,
+      "fresnel_phase_rms_aligned_rad": 0.12287203471162984,
+      "fresnel_phase_offset_rad": -1.7644086001085089,
+      "rs_per_incident_relative_l2_raw": 0.6722379777437935,
+      "rs_per_incident_relative_l2_aligned": 0.13571181181051567,
+      "rs_per_incident_intensity_l1": 0.10465618885951981,
+      "rs_per_incident_phase_rms_raw_rad": 0.6704961238461411,
+      "rs_per_incident_phase_rms_aligned_rad": 0.11918493123460776,
+      "rs_per_incident_phase_offset_rad": -0.658294768637999,
+      "fresnel_per_incident_relative_l2_raw": 0.6741468962441918,
+      "fresnel_per_incident_relative_l2_aligned": 0.14002523989683502,
+      "fresnel_per_incident_intensity_l1": 0.1082469081013533,
+      "fresnel_per_incident_phase_rms_raw_rad": 0.6722125584403793,
+      "fresnel_per_incident_phase_rms_aligned_rad": 0.12287203471162984,
+      "fresnel_per_incident_phase_offset_rad": -0.6592059052701679
+    },
+    {
+      "name": "A1",
+      "group": "A",
+      "xy_clearance": 1.8,
+      "pml": 1.0,
+      "source_distance": 0.8,
+      "source_width": 21.6,
+      "resolution": 6,
+      "opening_xy": 1.8,
+      "source_xy": 1.0,
+      "source_z": 0.8,
+      "screen_z": 1.5,
+      "source_to_screen_front": 0.7000000000000001,
+      "observation_z": 0.7999999999999972,
+      "monitor_xy": 1.4000000000000004,
+      "incident_aperture_rms_complex_nonuniformity": 0.0768810701947526,
+      "incident_aperture_max_complex_nonuniformity": 0.20272439276617954,
+      "incident_mean_real": -0.20449559508274584,
+      "incident_mean_imag": 0.7844166159919683,
+      "incident_mean_amplitude": 0.8106342429558089,
+      "incident_mean_phase_rad": 1.8258177811699476,
+      "incident_rms_amplitude": 0.8130264207891245,
+      "incident_mean_gain_vs_archive": 1.0508639759320482,
+      "incident_observation_dft_tail_l2": 0.3713896646212642,
+      "incident_aperture_dft_tail_l2": 2.3771965133755056e-11,
+      "transmitted_dft_tail_l2": 0.358883569511268,
+      "baseline_meep_relative_l2_raw": 1.0717871501749,
+      "baseline_meep_relative_l2_aligned": 0.05387745932440823,
+      "baseline_meep_intensity_l1": 0.09987692992245106,
+      "baseline_meep_phase_rms_raw_rad": 1.1000368015469575,
+      "baseline_meep_phase_rms_aligned_rad": 0.020401851497524087,
+      "baseline_meep_phase_offset_rad": -1.1000161095146597,
+      "control_meep_relative_l2_raw": 0.02493989151182553,
+      "control_meep_relative_l2_aligned": 0.02493911329304919,
+      "control_meep_intensity_l1": 0.017508042702070174,
+      "control_meep_phase_rms_raw_rad": 0.02234704878445578,
+      "control_meep_phase_rms_aligned_rad": 0.022344054399620047,
+      "control_meep_phase_offset_rad": 0.0001970956467223368,
+      "rs_relative_l2_raw": 1.6196421445359122,
+      "rs_relative_l2_aligned": 0.16237273839183705,
+      "rs_intensity_l1": 0.2057644590671849,
+      "rs_phase_rms_raw_rad": 1.7693382529090629,
+      "rs_phase_rms_aligned_rad": 0.11816373587994523,
+      "rs_phase_offset_rad": -1.7635431926409573,
+      "fresnel_relative_l2_raw": 1.6210786356655762,
+      "fresnel_relative_l2_aligned": 0.16654158420544707,
+      "fresnel_intensity_l1": 0.20825501927574172,
+      "fresnel_phase_rms_raw_rad": 1.7706566565515802,
+      "fresnel_phase_rms_aligned_rad": 0.12187509322551612,
+      "fresnel_phase_offset_rad": -1.764454562709852,
+      "rs_per_incident_relative_l2_raw": 0.671852871977488,
+      "rs_per_incident_relative_l2_aligned": 0.13399322118804086,
+      "rs_per_incident_intensity_l1": 0.10279821402124081,
+      "rs_per_incident_phase_rms_raw_rad": 0.6706770733040174,
+      "rs_per_incident_phase_rms_aligned_rad": 0.11816373587994523,
+      "rs_per_incident_phase_offset_rad": -0.658342328126602,
+      "fresnel_per_incident_relative_l2_raw": 0.6737630596497124,
+      "fresnel_per_incident_relative_l2_aligned": 0.13836290835164017,
+      "fresnel_per_incident_intensity_l1": 0.10640116706990084,
+      "fresnel_per_incident_phase_rms_raw_rad": 0.6723920906060108,
+      "fresnel_per_incident_phase_rms_aligned_rad": 0.12187509322551612,
+      "fresnel_per_incident_phase_offset_rad": -0.6592536981954965
+    }
+  ],
+  "grid_audits": {
+    "control": {
+      "incident_no_screen": {
+        "obs": {
+          "shape": [
+            126,
+            126
+          ],
+          "x_range": [
+            -10.416666666666666,
+            10.416666666666666
+          ],
+          "y_range": [
+            -10.416666666666666,
+            10.416666666666666
+          ],
+          "requested_z": 100.0,
+          "metadata_z_lab": [
+            100.0
+          ]
+        },
+        "ap": {
+          "shape": [
+            126,
+            126
+          ],
+          "x_range": [
+            -10.416666666666666,
+            10.416666666666666
+          ],
+          "y_range": [
+            -10.416666666666666,
+            10.416666666666666
+          ],
+          "requested_z": 0.0,
+          "metadata_z_lab": [
+            0.0
+          ]
+        }
+      },
+      "transmitted": {
+        "obs": {
+          "shape": [
+            126,
+            126
+          ],
+          "x_range": [
+            -10.416666666666666,
+            10.416666666666666
+          ],
+          "y_range": [
+            -10.416666666666666,
+            10.416666666666666
+          ],
+          "requested_z": 100.0,
+          "metadata_z_lab": [
+            100.0
+          ]
+        }
+      }
+    },
+    "A1": {
+      "incident_no_screen": {
+        "obs": {
+          "shape": [
+            126,
+            126
+          ],
+          "x_range": [
+            -10.416666666666666,
+            10.416666666666666
+          ],
+          "y_range": [
+            -10.416666666666666,
+            10.416666666666666
+          ],
+          "requested_z": 100.0,
+          "metadata_z_lab": [
+            100.0
+          ]
+        },
+        "ap": {
+          "shape": [
+            126,
+            126
+          ],
+          "x_range": [
+            -10.416666666666666,
+            10.416666666666666
+          ],
+          "y_range": [
+            -10.416666666666666,
+            10.416666666666666
+          ],
+          "requested_z": 0.0,
+          "metadata_z_lab": [
+            0.0
+          ]
+        }
+      },
+      "transmitted": {
+        "obs": {
+          "shape": [
+            126,
+            126
+          ],
+          "x_range": [
+            -10.416666666666666,
+            10.416666666666666
+          ],
+          "y_range": [
+            -10.416666666666666,
+            10.416666666666666
+          ],
+          "requested_z": 100.0,
+          "metadata_z_lab": [
+            100.0
+          ]
+        }
+      }
+    }
+  },
+  "convergence": {
+    "A": {
+      "status": "insufficient_levels",
+      "adjacent_steps": [
+        {
+          "from": "control",
+          "to": "A1",
+          "step_relative_l2_raw": 0.02495134975524362,
+          "step_relative_l2_aligned": 0.024950571178926823,
+          "step_intensity_l1": 0.01752413399090753,
+          "step_phase_rms_raw_rad": 0.022377394380834664,
+          "step_phase_rms_aligned_rad": 0.02237865676225165,
+          "step_phase_offset_rad": -0.00019709564672233678
+        }
+      ],
+      "last_pair_max_tail_l2": 0.3713896646212642
+    }
+  }
+}

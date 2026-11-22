@@ -1,0 +1,53 @@
+{
+  "p": "4",
+  "nf": "1",
+  "ar": "4",
+  "theta": "0.1",
+  "radius": "5",
+  "model": "Fresnel",
+  "target_relative_width": "0.01",
+  "target_absolute_width": "0.00001",
+  "maximum_degree": 64,
+  "maximum_bits": 512,
+  "timeout_seconds": 30,
+  "status": "target_met",
+  "reason": "requested targets met",
+  "seconds": 2.4244135999997525,
+  "peak_worker_mib": 50.90234375,
+  "best": {
+    "degree": 64,
+    "bits": 512,
+    "issue_s": 0.8690891000005649,
+    "verify_s": 1.36089599999832,
+    "peak_worker_mib": 50.90234375,
+    "status": "verified",
+    "reason": "",
+    "seconds": 2.4224192000001494,
+    "lower": "0.007126484427275525438939",
+    "upper": "0.007126484427275653961862",
+    "absolute_width": "1.285229224702018573749E-16",
+    "relative_width": "1.803454757836822560012E-14",
+    "relative_met": true,
+    "absolute_met": true,
+    "certificate": "n64_b512.json"
+  },
+  "attempts": [
+    {
+      "degree": 64,
+      "bits": 512,
+      "issue_s": 0.8690891000005649,
+      "verify_s": 1.36089599999832,
+      "peak_worker_mib": 50.90234375,
+      "status": "verified",
+      "reason": "",
+      "seconds": 2.4224192000001494,
+      "lower": "0.007126484427275525438939",
+      "upper": "0.007126484427275653961862",
+      "absolute_width": "1.285229224702018573749E-16",
+      "relative_width": "1.803454757836822560012E-14",
+      "relative_met": true,
+      "absolute_met": true,
+      "certificate": "n64_b512.json"
+    }
+  ]
+}

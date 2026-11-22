@@ -1,0 +1,10 @@
+{
+  "certificates_found": 312,
+  "independently_verified": 312,
+  "failures": [],
+  "verified_target_success_by_method": {
+    "A": 30,
+    "B": 30,
+    "C": 30
+  }
+}

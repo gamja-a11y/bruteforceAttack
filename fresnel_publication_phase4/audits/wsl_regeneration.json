@@ -1,0 +1,11 @@
+{
+  "verified": true,
+  "met": true,
+  "overlap": true,
+  "identical_endpoints": true,
+  "platform": "Linux-6.18.58.1-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+  "windows_source": "records/dev_9_Pade_80_512_3.json",
+  "rho": "3",
+  "degree": 80,
+  "bits": 512
+}

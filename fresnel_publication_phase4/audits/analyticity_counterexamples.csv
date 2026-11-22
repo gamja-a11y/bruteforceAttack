@@ -1,0 +1,5 @@
+﻿test,Q,rho,model,expected,observed,passed
+rho_at_one,1.00000000000000,1,Fresnel,rho must exceed,rho must exceed one,True
+rho_below_one,1.00000000000000,0.9,Pade,rho must exceed,rho must exceed one,True
+rectangle_meets_branch,8.00000000000000,2,Fresnel,branch,branch on complex domain is not provably finite and positive,True
+pade_rectangle_guard,6.00000000000000,2,Pade,complex domain,phase on complex domain is not provably finite and positive,True
